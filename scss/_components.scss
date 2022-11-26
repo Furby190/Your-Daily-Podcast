@@ -1,0 +1,72 @@
+.splide {
+    margin-top: 10%;
+    padding: 4%;
+}
+
+.splide__slide {
+    opacity: 0.6;
+
+    .card {
+        img {
+            height: 375px;
+            width: 375px;  
+        } 
+        .vectors-first {
+            img {
+                height: 210%;
+                width: 210%;
+            }
+            position: absolute;
+            top: 17%;
+            left: 15%;
+        }
+        .vectors-second {
+            img {
+                height: 99%;
+                width: 99%;
+            }
+            position: absolute;
+            top: 12%;
+            right: 17%;
+        }
+        .vectors-third {
+            img {
+                height: 99%;
+                width: 99%;
+            }
+            position: absolute;
+            top: 28%;
+            left: 29%;
+        }
+        .vectors-fourth {
+            img {
+                height: 96%;
+                width: 96%;
+            }
+            position: absolute;
+            top: 2%;
+        }
+        .vectors-fifth {
+            img {
+                height: 200%;
+                width: 200%;
+            }
+            position: absolute;
+            top: 33%;
+            left: 6%;
+        }
+        .card-platforms {
+            img {
+                height: 100%;
+                width: 100%;
+            }
+            position: absolute;
+            top: 4%;
+            right: 4%;
+        }
+    }
+}
+ 
+.splide__slide.is-active {
+    opacity: 1;
+}
