@@ -13,35 +13,12 @@ body {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.darker-btn {
-    height: 4.5em;
-    width: 14em;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 1em;
-    background-color: $pure-black;
-    color: $pure-white;
-    cursor: pointer;
-    border: none;
-    border-radius: 8px;
-    text-transform: uppercase;
-    box-shadow: 6px 6px 0px $shadow-darker-btn;
-}
-
-.card-platforms {
-    img {
-        height: 1em ;
-        width: 1em ;
-    }
-    position: absolute;
-    top: 3%;
-}
-
 .active {
     display: block;
 }
 
 header {
-    height: 1600px;
+    height: 1650px;
     width: 100vw;
     padding: 2% 0 0;
     background-color: $main-color;
@@ -248,3 +225,98 @@ header {
     }
 }
 
+#about {
+    height: 1400px;
+    background-color: $pure-white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    h2 span {
+        display: block;  
+    }
+
+    .ideas-area {
+        position: absolute;
+        display: grid;
+        grid-template-columns: auto auto;
+        height: 30%;
+        top: 25%;
+        padding: 5px 5%;
+        
+        .idea {
+            margin: 0 2.5px;
+            padding: 10%;
+
+            img {
+                height: 60%;
+                width: 58%;
+            }
+            p {
+                margin-top: 6%;
+            }
+        }
+    }
+
+    .quote-area {
+        position: absolute;
+        height: 28%;
+        width: 80%;
+        top: 65%;
+        left: 50%;
+        background-color: $main-color;
+        transform: translate(-50%);
+
+        p {
+            margin-top: 12%;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 130%;
+            span { 
+                display: block;
+            }
+        }
+
+        .quore-vectors {
+            img:nth-child(1) {
+                position: absolute;
+                top: -17%;
+                right: -4%;
+            }
+            img:nth-child(2) {
+                position: absolute;
+                top: 50%;
+                left: -6%;
+            }
+            img:nth-child(3) {
+                position: absolute;
+                top: 14%;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+        .quote-author {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5.5%;
+            gap: 1%;
+
+            .author {
+                display: flex;
+                flex-direction: row;
+
+                img {
+                    margin-right: 6%;
+                    border-radius: 50%;
+                }
+                .author-first-name {
+                    margin-top: 16%;
+                    font-size: 14px;
+                    font-weight: 400;  
+                } 
+            }
+        }       
+    }
+}
