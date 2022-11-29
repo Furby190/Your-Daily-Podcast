@@ -163,6 +163,17 @@
   letter-spacing: -0.02em;
 }
 
+.text-under-section-title {
+  position: absolute;
+  top: 226px;
+  left: 50%;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 22px;
+  color: #4D4D4D;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -563,5 +574,78 @@ header .supported-platforms .platform {
   margin-top: 16%;
   font-size: 14px;
   font-weight: 400;
+}
+
+#user-opinions {
+  height: 850px;
+  background-color: #EDF3F7;
+  text-align: center;
+}
+
+#user-opinions img:nth-of-type(2) {
+  position: absolute;
+  top: 7.5%;
+  left: 20%;
+}
+
+#user-opinions .opinions-container {
+  height: 45%;
+  width: 63%;
+  top: 45%;
+}
+
+#user-opinions .opinions-container .opinion {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 11%;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+#user-opinions .opinions-container .opinion .opinion-quotation {
+  position: absolute;
+  top: 16%;
+  left: 5%;
+}
+
+#user-opinions .opinions-container .opinion .opinion-text {
+  position: absolute;
+  margin-top: 2%;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size: 22px;
+  width: 80%;
+  left: 5%;
+  text-align: left;
+}
+
+#user-opinions .opinions-container .opinion .user {
+  position: relative;
+  height: 50%;
+  width: 60%;
+  top: 90%;
+  left: -7.5%;
+  background-color: aqua;
+}
+
+#user-opinions .opinions-container .opinion .user img:nth-of-type(1) {
+  left: 0;
+  border-radius: 50%;
+}
+
+#user-opinions .opinions-container .opinion .user img:nth-of-type(2) {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+#user-opinions .opinions-container .opinion .user p {
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 /*# sourceMappingURL=main.css.map */

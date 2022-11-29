@@ -2,7 +2,6 @@
 @import './_colors';
 @import './_components';
 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -178,16 +177,13 @@ header {
             display: block;
         }
     }
-
     .header-sub-btn {
         margin-top: 5%;
     }
-
     .hero-shape-swirl {
         position: absolute;
         top: 15%;
     }
-
     .hero-shape-stars {
         position: absolute;
         top: 39%;
@@ -217,7 +213,6 @@ header {
                 font-weight: bold;
             }
         }
-       
         .platform {
             display: flex;
             flex-direction: row;
@@ -320,3 +315,77 @@ header {
         }       
     }
 }
+
+#user-opinions {
+    height: 850px;
+    background-color: $alice-blue;
+    text-align: center;
+    
+     img:nth-of-type(2) {
+        position: absolute;
+        top: 7.5%;
+        left: 20%;
+    }
+
+    .opinions-container {
+        height: 45%;
+        width: 63%;
+        top: 45%;
+        
+        .opinion {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            padding: 11%;
+            background-color: $pure-white;
+            border-radius: 8px;
+            
+            .opinion-quotation {
+                position: absolute;
+                top: 16%;
+                left: 5%;
+            }
+            .opinion-text {
+                position: absolute;
+                margin-top: 2%;
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-size: 22px;
+                width: 80%;
+                left: 5%;
+                text-align: left;
+            }
+            .user {
+                position: relative;
+                height: 50%;
+                width: 60%;
+                top: 90%;
+                left: -7.5%;
+                // background-color: aqua;
+
+                img:nth-of-type(1) {
+                    @include user-element-style;
+                    left: 0;
+                    border-radius: 50%; 
+                      
+                }
+                img:nth-of-type(2) {
+                    @include user-element-style;
+                    left: 35%;
+                }
+                p {
+                    @include user-element-style;
+                    left: 16%;
+                }
+
+            }
+            
+        }
+    
+        
+
+    }
+    
+ 
+    
+}
+

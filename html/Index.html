@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Daily Podcast</title>
 
+    
+    <link rel="shortcut icon" href="#">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="../css/splide-default.min.css">
-
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../node_modules/@splidejs/splide/dist/css/splide.min.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
@@ -51,11 +53,11 @@
             <img src="../svg-icons/Header/Hero-Shape-Stars/Hero Shape Stars.svg" alt="">    
         </div>
 
-        <section id="thumbnail-carousel" class="splide" aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
+       
+        <div id="thumbnail-carousel" class="splide" >
             <div class="splide__track">
-                    <ul class="splide__list">
-
-                        <li class="splide__slide">
+                <ul class="splide__list">
+                        <li class="splide__slide">      
                             <div class="card">
                                 <img src="../img/Slide-Cards-Backgrounds/Tesla-Autopilot.jpg" alt="A bus standing on two wheels against a background home.">
                                 <p class="card-title">Tesla Autopilot</p>
@@ -64,7 +66,6 @@
                                 </div> 
                                 <div class="vectors-first">
                                     <img src="../svg-icons/Header/Slide-Cards-Vectors/Tesla-Autopilot-Vectors.svg" alt="Vectors">
-                                </div> 
                             </div>
                         </li>
                         <li class="splide__slide">
@@ -115,9 +116,9 @@
                                 </div> 
                             </div>
                         </li>
-                    </ul>
+                </ul>
             </div>
-        </section>
+        </div>
         
         <div class="supported-platforms">
             <div class="platforms">
@@ -166,48 +167,64 @@
 
                 <div class="quote-author">
                     <div class="author">
-                        <img src="../img/About-Section-JPG/User-John-Smith.jpg" alt="John Smith">
-                        <p class="author-first-name">John </p>
+                        <img src="../img/About-Section-JPG/User-John-Smith.jpg" alt="John">
+                        <p class="author-first-name">John</p>
                     </div>
                     <div class="author-platform">
-                        <img src="../svg-icons/Main/About-Section/User-Vector-Platform.svg" alt="">
+                        <img src="../svg-icons/Main/About-Section/User-Vector-Platform.svg" alt="Spotify logo with position name">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="user-opinions section">
+        <section id="user-opinions" class="user-opinions section">
 
-            <h2>What our listeners say</h2>
-            <p>Their experience throughout every platform</p>
+            
+            <h2 class="section-title">What our listeners say</h2>
+            <p class="text-under-section-title">Their experience throughout every platform</p>
 
             <div class="user-opinions-vectors">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img class="scribble" src="../svg-icons/Main/Scribble-Vector-Black.svg" alt="Scribble">
+                <img src="../svg-icons/Main/User-Opinions-Section/Sparkle-User-Opinions.svg" alt="Sparkle">
             </div>
 
-            <div class="opinions">
-                <div class="opinion">
+            <div class="opinions-container swiper">
+                <div class="swiper-wrapper">
 
-                    <img src="" alt="">
+                    <div class="opinion swiper-slide">
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius illo natus iusto cum dolorem neque magnam? Voluptatem accusantium veritatis alias.</p>
+                        <img class="opinion-quotation" src='../svg-icons/Main/User-Opinions-Section/"-User-Opinions-Section.svg' alt="quotation marks">
 
-                    <div class="user">
-                        <img src="" alt="">
-                        <p class="user-first-name"></p>
-                        <img src="" alt="">
+                        <div class="opinion-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed beatae dolorem aliquid doloribus est ea sapiente recusandae incidunt non consequatur.</p>
+                        </div>
+
+                        <div class="user">
+                            <img src="../svg-icons/Main/User-Opinions-Section/Luna-User-1.jpg" alt="User photo">
+                            <p class="user-first-name">Luna</p>
+                            <img src="../svg-icons/Main/User-Opinions-Section/Spotify-Platform.svg" alt="Spotify logo">
+                        </div>
                     </div>
+                   
+                    
+                    
+
+                    
+                    
+
                 </div>
 
             </div>
 
+            
+            
 
 
 
         </section>
         
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
    </main>
 
@@ -216,9 +233,14 @@
 
 
 
-    <section id="episodes"></section>
+    
 
-    <script src="../js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/swiper-opinions.js"></script>
+    <script src="../js/splide-header.js"></script>
     <script src="../js/main.js"></script>
+    
 </body>
 </html>
+
+

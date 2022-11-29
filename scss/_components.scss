@@ -115,3 +115,12 @@
     letter-spacing: -0.02em;
 }
 
+.text-under-section-title {
+    position: absolute;
+    top: 226px;
+    left: 50%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 22px;
+    color: $dark-gray;
+    transform: translate(-50%);
+}
