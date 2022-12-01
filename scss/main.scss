@@ -223,6 +223,7 @@ header {
 
 #about {
     height: 1400px;
+    width: 100vw;
     background-color: $pure-white;
     display: flex;
     justify-content: center;
@@ -319,6 +320,7 @@ header {
 
 #user-opinions {
     height: 850px;
+    width: 100vw;
     background-color: $alice-blue;
     
      img:nth-of-type(2) {
@@ -380,8 +382,47 @@ header {
 }
 
 #benefits {
-    height: 1200px;
+    height: 1400px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
     background-color: $pure-white;
     
+    .benefits-uniquely-scribble {
+        position: absolute; 
+        top: -2.5%;
+        right: 18%;
+    }
 
+    .benefits-container {
+        position: absolute;
+        height: 55%;
+        width: 90%;
+        padding: .5%;
+        top: 24%;
+        left: 50%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: transparent;
+        transform: translate( -50%, 0);
+        gap: 1%;
+
+        .benefit-card {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 50% 15% 35%;
+            background-color: transparent;
+            text-align: center;
+            
+            .benefit-card-photo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }   
+        }
+    }
+    .benefits-btn {
+        top: 87.5%;
+    }
 }
+
