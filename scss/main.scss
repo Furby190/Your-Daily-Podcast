@@ -1,6 +1,7 @@
 @import './_animations';
 @import './_colors';
 @import './_components';
+@import './_@mixins';
 
 * {
     box-sizing: border-box;
@@ -223,7 +224,6 @@ header {
 #about {
     height: 1400px;
     background-color: $pure-white;
-    text-align: center;
     display: flex;
     justify-content: center;
 
@@ -291,6 +291,7 @@ header {
                 transform: translate(-50%);
             }
         }
+
         .quote-author {
             display: flex;
             justify-content: center;
@@ -319,7 +320,6 @@ header {
 #user-opinions {
     height: 850px;
     background-color: $alice-blue;
-    text-align: center;
     
      img:nth-of-type(2) {
         position: absolute;
@@ -360,13 +360,11 @@ header {
                 width: 60%;
                 top: 90%;
                 left: -7.5%;
-                // background-color: aqua;
 
                 img:nth-of-type(1) {
                     @include user-element-style;
                     left: 0;
-                    border-radius: 50%; 
-                      
+                    border-radius: 50%;      
                 }
                 img:nth-of-type(2) {
                     @include user-element-style;
@@ -374,18 +372,16 @@ header {
                 }
                 p {
                     @include user-element-style;
-                    left: 16%;
+                    left: 18%;
                 }
-
-            }
-            
+            }            
         }
-    
-        
-
     }
-    
- 
-    
 }
 
+#benefits {
+    height: 1200px;
+    background-color: $pure-white;
+    
+
+}
