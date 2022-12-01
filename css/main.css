@@ -22,7 +22,7 @@
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
   z-index: -1;
-  background-color: rgba(26, 25, 25, 0.555);
+  background-color: rgba(26, 25, 25, 0.666);
 }
 .btn-special-animation:hover::before {
   -webkit-transform: scaleX(1);
@@ -581,7 +581,7 @@ header .supported-platforms .platform {
 }
 
 #benefits {
-  height: 1400px;
+  height: 1340px;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -601,7 +601,7 @@ header .supported-platforms .platform {
   height: 55%;
   width: 90%;
   padding: 0.5%;
-  top: 24%;
+  top: 27%;
   left: 50%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -630,4 +630,52 @@ header .supported-platforms .platform {
 }
 #benefits .benefits-btn {
   top: 87.5%;
+}
+
+#episodes {
+  height: 1460px;
+  width: 100vw;
+  background-color: #F7EDE8;
+}
+#episodes .episodes-container {
+  position: relative;
+  top: 17%;
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: aqua;
+}
+#episodes .episodes-container .episode-card {
+  margin: 1%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 90% 10%;
+  background-color: rgb(161, 125, 195);
+}
+#episodes .episodes-container .episode-card .card-cover {
+  display: grid;
+  grid-template-columns: 30% 60%;
+}
+#episodes .episodes-container .episode-card .card-cover .card-cover-items {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 47.5% 5% 47.5%;
+}
+#episodes .episodes-container .episode-card .card-info {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+#episodes .episodes-container .episode-card .card-info .host-authors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }/*# sourceMappingURL=main.css.map */

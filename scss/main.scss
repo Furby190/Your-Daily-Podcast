@@ -382,7 +382,7 @@ header {
 }
 
 #benefits {
-    height: 1400px;
+    height: 1340px;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -399,7 +399,7 @@ header {
         height: 55%;
         width: 90%;
         padding: .5%;
-        top: 24%;
+        top: 27%;
         left: 50%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -425,4 +425,53 @@ header {
         top: 87.5%;
     }
 }
+
+#episodes {
+    height: 1460px;
+    width: 100vw;
+    background-color: $main-color;
+
+    
+    .episodes-container {
+        position: relative;
+        top: 17%;
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: aqua;
+
+        .episode-card {
+            margin: 1%;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 90% 10%;
+            background-color:rgb(161, 125, 195);
+            
+            .card-cover {
+                display: grid;
+                grid-template-columns: 30% 60%;
+
+                .card-cover-items {
+                    display: grid;
+                    grid-template-columns: auto;
+                    grid-template-rows: 47.5% 5% 47.5%;
+                }
+            }
+            .card-info {
+                display: grid;
+                grid-template-columns: 65% 35%;
+                
+                .host-authors {
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+                    flex-direction: row;
+                }
+            }
+        }
+
+    }
+}
+
+
+
 
