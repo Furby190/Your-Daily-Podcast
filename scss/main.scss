@@ -422,15 +422,18 @@ header {
         }
     }
     .benefits-btn {
+        height: 4.5em;
         top: 87.5%;
     }
 }
 
 #episodes {
+    position: relative;
     height: 1460px;
     width: 100vw;
     background-color: $main-color;
-    
+
+   
     .episodes-btn {
         top: 26.4%;
     }
@@ -521,6 +524,89 @@ header {
                     justify-content: left;
                     img {
                         margin-right: 2%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#become-sponsor {
+    height: 1200px;
+    width: 100vw;
+    background-color: $pure-white;
+
+    .sponsoring-offers {
+        position: relative;
+        height: 80%;
+        width: 100%;
+        padding: 5% 0;
+        top: 24%;
+        left: 50%;
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        column-gap: 3%;
+        transform: translate(-50%, 0);
+        // background-color: aquamarine;
+
+        .offer-card {
+            height: 100%;
+            display: grid;
+            grid-template-rows: 57% 43%;
+
+            .offer-info {
+                margin-bottom: 8.5%;
+                padding: 10% 10% 13% 10%;
+                display: grid;
+                grid-template-rows: 30% 30% 40%;
+                text-align: left;
+                border-radius: 9px;
+                border: 2px solid $pure-black;
+                // background-color: burlywood;
+                p {
+                    font-size: 14px;
+                    // background-color: #fff;
+                }
+                h2 {
+                    font-size: 36px;
+                    // background-color: brown;
+                }
+                .subscription {
+                    display: grid;
+                    grid-template-columns: 60% 40%;
+                    // background-color: chartreuse;
+
+                    .sponsoring-btn {
+                        // background-color:aqua;
+                        button {
+                            margin-top: 35%;
+                            padding: 10% 20%;
+                            justify-content: left;
+                        }
+                    }
+                    .price {
+                        padding-top: 59%;
+                        text-align: right;
+                        // background-color: brown;
+                    } 
+                }
+            }
+            .sponsoring-benefits {
+                padding: 10%;
+                text-align: left;
+                border: 2px solid $pure-black;
+                border-radius: 9px;
+                // background-color:cadetblue;
+                p {
+                    margin-bottom: 10%;
+                    font-size: 14px;
+                    color: $dark-gray;
+                }
+                .sponsoring-benefits-list {
+                    padding-left: 5.5%;
+                    li {
+                        font-size: 16px;
+                        margin-bottom: 6%;
                     }
                 }
             }

@@ -5,8 +5,7 @@
 }
 
 .darker-btn {
-    height: 4.5em;
-    width: 14em;
+    padding: 2% 5%;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 1em;
     background-color: $pure-black;
@@ -130,6 +129,6 @@
     box-shadow: 10px 10px $shadow-blue;
 }
 
-.episode-card-red-title {
+.red-title {
     color: $title-red;
 }

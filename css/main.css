@@ -38,8 +38,7 @@
 }
 
 .darker-btn {
-  height: 4.5em;
-  width: 14em;
+  padding: 2% 5%;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 1em;
   background-color: #000000;
@@ -164,7 +163,7 @@
           box-shadow: 10px 10px #81ADC8;
 }
 
-.episode-card-red-title {
+.red-title {
   color: #CD4631;
 }
 
@@ -638,10 +637,12 @@ header .supported-platforms .platform {
           align-items: center;
 }
 #benefits .benefits-btn {
+  height: 4.5em;
   top: 87.5%;
 }
 
 #episodes {
+  position: relative;
   height: 1460px;
   width: 100vw;
   background-color: #F7EDE8;
@@ -747,4 +748,78 @@ header .supported-platforms .platform {
 }
 #episodes .episodes-container .episode-card .card-info .tags img {
   margin-right: 2%;
+}
+
+#become-sponsor {
+  height: 1200px;
+  width: 100vw;
+  background-color: #ffffff;
+}
+#become-sponsor .sponsoring-offers {
+  position: relative;
+  height: 80%;
+  width: 100%;
+  padding: 5% 0;
+  top: 24%;
+  left: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
+  -webkit-column-gap: 3%;
+     -moz-column-gap: 3%;
+          column-gap: 3%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+#become-sponsor .sponsoring-offers .offer-card {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 57% 43%;
+}
+#become-sponsor .sponsoring-offers .offer-card .offer-info {
+  margin-bottom: 8.5%;
+  padding: 10% 10% 13% 10%;
+  display: grid;
+  grid-template-rows: 30% 30% 40%;
+  text-align: left;
+  border-radius: 9px;
+  border: 2px solid #000000;
+}
+#become-sponsor .sponsoring-offers .offer-card .offer-info p {
+  font-size: 14px;
+}
+#become-sponsor .sponsoring-offers .offer-card .offer-info h2 {
+  font-size: 36px;
+}
+#become-sponsor .sponsoring-offers .offer-card .offer-info .subscription {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+#become-sponsor .sponsoring-offers .offer-card .offer-info .subscription .sponsoring-btn button {
+  margin-top: 35%;
+  padding: 10% 20%;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+#become-sponsor .sponsoring-offers .offer-card .offer-info .subscription .price {
+  padding-top: 59%;
+  text-align: right;
+}
+#become-sponsor .sponsoring-offers .offer-card .sponsoring-benefits {
+  padding: 10%;
+  text-align: left;
+  border: 2px solid #000000;
+  border-radius: 9px;
+}
+#become-sponsor .sponsoring-offers .offer-card .sponsoring-benefits p {
+  margin-bottom: 10%;
+  font-size: 14px;
+  color: #4D4D4D;
+}
+#become-sponsor .sponsoring-offers .offer-card .sponsoring-benefits .sponsoring-benefits-list {
+  padding-left: 5.5%;
+}
+#become-sponsor .sponsoring-offers .offer-card .sponsoring-benefits .sponsoring-benefits-list li {
+  font-size: 16px;
+  margin-bottom: 6%;
 }/*# sourceMappingURL=main.css.map */
