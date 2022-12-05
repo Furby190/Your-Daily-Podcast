@@ -159,6 +159,15 @@
           transform: translate(-50%);
 }
 
+.episode-card-shadow {
+  -webkit-box-shadow: 10px 10px #81ADC8;
+          box-shadow: 10px 10px #81ADC8;
+}
+
+.episode-card-red-title {
+  color: #CD4631;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -637,28 +646,74 @@ header .supported-platforms .platform {
   width: 100vw;
   background-color: #F7EDE8;
 }
+#episodes .episodes-btn {
+  top: 26.4%;
+}
+#episodes .episodes-sparkle {
+  position: absolute;
+  top: 11%;
+  left: 84%;
+}
 #episodes .episodes-container {
   position: relative;
-  top: 17%;
+  height: 62.4%;
+  width: 92%;
+  top: 20%;
+  left: 50%;
   display: grid;
   grid-template-columns: auto auto;
-  background-color: aqua;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 #episodes .episodes-container .episode-card {
-  margin: 1%;
+  position: relative;
+  height: 249px;
+  width: 570px;
+  padding: 2%;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 90% 10%;
-  background-color: rgb(161, 125, 195);
+  grid-template-rows: 84% 16%;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 9px;
 }
 #episodes .episodes-container .episode-card .card-cover {
   display: grid;
   grid-template-columns: 30% 60%;
 }
+#episodes .episodes-container .episode-card .card-cover .card-cover-image img {
+  border-radius: 10px;
+}
 #episodes .episodes-container .episode-card .card-cover .card-cover-items {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 47.5% 5% 47.5%;
+}
+#episodes .episodes-container .episode-card .card-cover .card-cover-items .card-cover-title {
+  height: 70%;
+  width: 110%;
+  margin: 5% 0 10% 5.5%;
+  text-align: left;
+}
+#episodes .episodes-container .episode-card .card-cover .card-cover-items .card-cover-title p {
+  margin-bottom: 1.5%;
+  font-weight: 700;
+  color: #CD4631;
+}
+#episodes .episodes-container .episode-card .card-cover .card-cover-items .card-cover-text {
+  width: 110%;
+  margin-left: 5.5%;
+  padding-top: 3%;
+  text-align: left;
+  color: #4D4D4D;
+}
+#episodes .episodes-container .episode-card .card-cover .card-cover-items .card-cover-line {
+  height: 1%;
+  width: 110%;
+  margin-left: 5.5%;
+  background-color: #4D4D4D;
 }
 #episodes .episodes-container .episode-card .card-info {
   display: grid;
@@ -678,4 +733,18 @@ header .supported-platforms .platform {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+#episodes .episodes-container .episode-card .card-info .host-authors img {
+  margin-left: 3%;
+}
+#episodes .episodes-container .episode-card .card-info .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+#episodes .episodes-container .episode-card .card-info .tags img {
+  margin-right: 2%;
 }/*# sourceMappingURL=main.css.map */

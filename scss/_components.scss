@@ -125,3 +125,11 @@
     color: $dark-gray;
     transform: translate(-50%);
 }
+
+.episode-card-shadow {
+    box-shadow: 10px 10px $shadow-blue;
+}
+
+.episode-card-red-title {
+    color: $title-red;
+}
