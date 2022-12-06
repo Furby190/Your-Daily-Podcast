@@ -35,8 +35,8 @@ header {
         .nav-logo {
             position: absolute;
             top: 50%;
-            transform: translate(0, -50%);
             left: 0; 
+            transform: translate(0, -50%);
         }
         
         .nav-menu {
@@ -44,44 +44,44 @@ header {
             height: 45%;
             width: 30%;
             padding: 2% 0;
+            top: 50%;
+            left: 28%;
             display: flex;
             justify-content: space-around;
-            left: 28%;
-            top: 50%;
-            transform: translate(-50%, -50%);
             background-color: transparent;
+            transform: translate(-50%, -50%);
             
             .nav-menu-btn  {
                 height: 140%;
                 width: 26%;
                 font-family: 'Montserrat Alternates', sans-serif;
                 color: $pure-black;
-                cursor: pointer;
-                border-bottom-right-radius: 6px;
                 text-decoration: none;
+                border-bottom-right-radius: 6px;
                 transition: box-shadow .3s;
+                cursor: pointer;
             }
             .more-menu-btn {
                 position: relative;
                 height: 140%;
                 width: 26%;
                 padding: 0 0 0 2.5%;
+                background-color: transparent;
                 border-top-right-radius: 6px;
                 transition: box-shadow .3s;
-                background-color: transparent;
                 
                 .more-btn {
                     padding: 4% 10% 2%;
                 }
                 button {
-                    font-family: 'Montserrat Alternates', sans-serif;
-                    font-size: 16px;
                     display: flex;
                     flex-direction: row;
                     background-color: transparent;
-                    cursor: pointer;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-size: 16px;
                     border: none;
                     border-radius: 6px;
+                    cursor: pointer;
                 }
                 img {
                     margin-top: 2%;
@@ -94,7 +94,6 @@ header {
             .nav-menu-btn:hover {
                 box-shadow: 2px  2px $darker-main-color;
             } 
-       
             .dropdown-content {
                 position: absolute;
                 display: none;
@@ -117,18 +116,17 @@ header {
                 a:hover {
                     box-shadow: 3px 0  0.1px -1px $darker-main-color;
                 }
-            }
-            
+            } 
         }
         .nav-main-btns {
             position: absolute;
             height: 45%;
             width: 26%;
+            top: 50%;
+            right: -9%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            top: 50%;
-            right: -9%;
             transform: translate(-50%, -50%);
             
             .nav-main-btn {
@@ -138,14 +136,14 @@ header {
                 font-weight: 400;
                 border: 2px solid $pure-black;
                 border-radius: 8px;
-                cursor: pointer;
                 text-transform: uppercase;
                 transition: transform .3s;
+                cursor: pointer;
             }
             .nav-main-btn:nth-child(1) {
+                color: $pure-black;
                 background-color: transparent;
                 text-decoration: none;
-                color: $pure-black;
             }
             .nav-main-btn:nth-child(2) {
                 color: $pure-white;
@@ -188,17 +186,15 @@ header {
     .hero-shape-stars {
         position: absolute;
         top: 39%;
-        right: 0;
-        
+        right: 0; 
     }
-
     .supported-platforms {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         width: 80%;
         margin: 3% auto 0;
         padding: 3% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         border-top: 2px solid $dark-gray;
         border-bottom: 2px solid $dark-gray;
         
@@ -224,9 +220,9 @@ header {
 #about {
     height: 1400px;
     width: 100vw;
-    background-color: $pure-white;
     display: flex;
     justify-content: center;
+    background-color: $pure-white;
 
     h2 span {
         display: block;  
@@ -234,11 +230,11 @@ header {
 
     .ideas-area {
         position: absolute;
+        height: 30%;
+        padding: 5px 5%;
+        top: 25%;
         display: grid;
         grid-template-columns: auto auto;
-        height: 30%;
-        top: 25%;
-        padding: 5px 5%;
         
         .idea {
             margin: 0 2.5px;
@@ -253,7 +249,6 @@ header {
             }
         }
     }
-
     .quote-area {
         position: absolute;
         height: 28%;
@@ -292,12 +287,11 @@ header {
                 transform: translate(-50%);
             }
         }
-
         .quote-author {
+            margin-top: 5.5%;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 5.5%;
             gap: 1%;
 
             .author {
@@ -323,12 +317,11 @@ header {
     width: 100vw;
     background-color: $alice-blue;
     
-     img:nth-of-type(2) {
+    img:nth-of-type(2) {
         position: absolute;
         top: 7.5%;
         left: 20%;
     }
-
     .opinions-container {
         height: 45%;
         width: 63%;
@@ -350,11 +343,11 @@ header {
             .opinion-text {
                 position: absolute;
                 margin-top: 2%;
-                font-family: 'Montserrat Alternates', sans-serif;
-                font-size: 22px;
                 width: 80%;
                 left: 5%;
                 text-align: left;
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-size: 22px;
             }
             .user {
                 position: relative;
@@ -393,32 +386,34 @@ header {
         top: -2.5%;
         right: 18%;
     }
-
     .benefits-container {
         position: absolute;
         height: 55%;
-        width: 90%;
-        padding: .5%;
+        width: 100%;   
+        padding: 2%;
         top: 27%;
         left: 50%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        background-color: transparent;
-        transform: translate( -50%, 0);
-        gap: 1%;
-
+        grid-template-columns: repeat(3, 4fr);
+        transform: translate(-50%, 0);
+        gap: 1em;
+       
         .benefit-card {
             display: grid;
-            grid-template-columns: auto;
             grid-template-rows: 50% 15% 35%;
-            background-color: transparent;
             text-align: center;
+            transition: box-shadow .5s, transform .5s;
+            border-bottom-right-radius: 8px;
             
             .benefit-card-photo {
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }   
+        }
+        .benefit-card:hover {
+            box-shadow: 5px 5px $shadow-blue;
+            transform: scale(1.01);
         }
     }
     .benefits-btn {
@@ -433,7 +428,6 @@ header {
     width: 100vw;
     background-color: $main-color;
 
-   
     .episodes-btn {
         top: 26.4%;
     }
@@ -498,18 +492,16 @@ header {
                         color: $dark-gray;
                     }
                     .card-cover-line {
-                        height: 1%;
+                        @include line-shared-style;
                         width: 110%;                
-                        margin-left: 5.5%;
-                        background-color: $dark-gray;
+                        margin-left: 5.5%; 
                     }
                 }
             }
             .card-info {
                 display: grid;
                 grid-template-columns: 65% 35%;
-
-                
+  
                 .host-authors {
                     display: flex;
                     justify-content: right;
@@ -535,21 +527,40 @@ header {
     height: 1200px;
     width: 100vw;
     background-color: $pure-white;
-
+    text-align: center;
+    
+    img:nth-child(1) {
+        position: absolute;
+        top: 6%;
+        left: 23%;
+    }
+    img:nth-child(2) {
+        position: absolute;
+        top: 22.5%;
+        right: .5%;
+    }
+    img:nth-child(3) {
+        position: absolute;
+        height: 80px;
+        transform: rotate(50deg);
+        top: 63%;
+        left: 26.5%;
+    }
+    
     .sponsoring-offers {
         position: relative;
         height: 80%;
         width: 100%;
         padding: 5% 0;
-        top: 24%;
+        top: 19%;
         left: 50%;
         display: grid;
         grid-template-columns: repeat(3, 4fr);
         column-gap: 3%;
         transform: translate(-50%, 0);
-        // background-color: aquamarine;
-
+        
         .offer-card {
+            position: relative;
             height: 100%;
             display: grid;
             grid-template-rows: 57% 43%;
@@ -562,22 +573,18 @@ header {
                 text-align: left;
                 border-radius: 9px;
                 border: 2px solid $pure-black;
-                // background-color: burlywood;
+
                 p {
                     font-size: 14px;
-                    // background-color: #fff;
                 }
                 h2 {
                     font-size: 36px;
-                    // background-color: brown;
                 }
                 .subscription {
                     display: grid;
                     grid-template-columns: 60% 40%;
-                    // background-color: chartreuse;
 
                     .sponsoring-btn {
-                        // background-color:aqua;
                         button {
                             margin-top: 35%;
                             padding: 10% 20%;
@@ -587,7 +594,6 @@ header {
                     .price {
                         padding-top: 59%;
                         text-align: right;
-                        // background-color: brown;
                     } 
                 }
             }
@@ -596,7 +602,6 @@ header {
                 text-align: left;
                 border: 2px solid $pure-black;
                 border-radius: 9px;
-                // background-color:cadetblue;
                 p {
                     margin-bottom: 10%;
                     font-size: 14px;
@@ -605,12 +610,110 @@ header {
                 .sponsoring-benefits-list {
                     padding-left: 5.5%;
                     li {
-                        font-size: 16px;
                         margin-bottom: 6%;
+                        font-size: 16px;
+                        span {
+                            font-weight: 700;
+                        }
                     }
                 }
             }
         }
+        .offer-special {
+            .offer-info {
+                border: 2px solid $title-red;
+                background-color: $main-color;
+
+                .offer-info-special {
+                    position: absolute;
+                    padding: 1%;
+                    top: 7.5%;
+                    right: 10.7%;
+                    text-transform: uppercase;
+                    color: $pure-white;
+                    background-color: $title-red;
+                    border-radius: 3px;   
+                }
+            }
+            .sponsoring-benefits {
+                background-color: $main-color;
+                border: 2px solid $title-red;
+            }
+        }
+    }
+}
+
+#news-section {
+    height: 1300px;
+    width: 100vw;
+    background-color: $pure-white;
+
+
+    .news-container {
+        position: relative;
+        height: 670px;
+        width: 91%;
+        top: 24%;
+        left: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 6fr);
+        column-gap: 2%;
+        transform: translate(-50%, 0);
+        
+        .news-card {
+            padding: 3%;
+            display: grid;
+            grid-template-rows: 54% 46%;
+            border: 2px solid $pure-black;
+            border-radius: 9px;
+
+            .news-card-info {
+                display: grid;
+                grid-template-rows: 35% 35% 10% 20%;
+                text-align: left;
+
+                .news-card-title {
+                    margin-top: 1%;
+                    p {
+                        margin-bottom: 1%;
+                        color:$dark-gray;
+                        text-transform: uppercase;
+                    }
+                    h2 {
+                        font-size: 36px;
+                    }
+                }
+
+                .news-card-line {
+                    margin-top: 2.2%;
+                    @include line-shared-style;
+                }
+                .news-card-tags-date {
+                    position: relative;
+                    margin-top: 5%;
+                    display: grid;
+                    grid-template-columns: 70% 30%;
+
+                    .news-card-tags {
+                        display: flex;
+                        justify-content:left;
+                        align-items:flex-end;
+
+                        img {
+                            margin-right: 3%;
+                        }
+                    }
+                    .news-card-date {
+                        display: flex;
+                        justify-content: right;
+                        align-items: flex-end;  
+                    }  
+                }
+            }
+        }
+    }
+    .news-btn {
+        top: 33%;
     }
 }
 

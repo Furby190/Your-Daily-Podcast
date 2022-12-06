@@ -200,57 +200,55 @@ header nav {
 header nav .nav-logo {
   position: absolute;
   top: 50%;
+  left: 0;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  left: 0;
 }
 header nav .nav-menu {
   position: absolute;
   height: 45%;
   width: 30%;
   padding: 2% 0;
+  top: 50%;
+  left: 28%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  left: 28%;
-  top: 50%;
+  background-color: transparent;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background-color: transparent;
 }
 header nav .nav-menu .nav-menu-btn {
   height: 140%;
   width: 26%;
   font-family: "Montserrat Alternates", sans-serif;
   color: #000000;
-  cursor: pointer;
-  border-bottom-right-radius: 6px;
   text-decoration: none;
+  border-bottom-right-radius: 6px;
   -webkit-transition: -webkit-box-shadow 0.3s;
   transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  cursor: pointer;
 }
 header nav .nav-menu .more-menu-btn {
   position: relative;
   height: 140%;
   width: 26%;
   padding: 0 0 0 2.5%;
+  background-color: transparent;
   border-top-right-radius: 6px;
   -webkit-transition: -webkit-box-shadow 0.3s;
   transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
-  background-color: transparent;
 }
 header nav .nav-menu .more-menu-btn .more-btn {
   padding: 4% 10% 2%;
 }
 header nav .nav-menu .more-menu-btn button {
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -259,9 +257,11 @@ header nav .nav-menu .more-menu-btn button {
       -ms-flex-direction: row;
           flex-direction: row;
   background-color: transparent;
-  cursor: pointer;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
   border: none;
   border-radius: 6px;
+  cursor: pointer;
 }
 header nav .nav-menu .more-menu-btn img {
   margin-top: 2%;
@@ -305,6 +305,8 @@ header nav .nav-main-btns {
   position: absolute;
   height: 45%;
   width: 26%;
+  top: 50%;
+  right: -9%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -314,8 +316,6 @@ header nav .nav-main-btns {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 50%;
-  right: -9%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -326,17 +326,17 @@ header nav .nav-main-btns .nav-main-btn {
   font-weight: 400;
   border: 2px solid #000000;
   border-radius: 8px;
-  cursor: pointer;
   text-transform: uppercase;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+  cursor: pointer;
 }
 header nav .nav-main-btns .nav-main-btn:nth-child(1) {
+  color: #000000;
   background-color: transparent;
   text-decoration: none;
-  color: #000000;
 }
 header nav .nav-main-btns .nav-main-btn:nth-child(2) {
   color: #ffffff;
@@ -378,6 +378,9 @@ header .hero-shape-stars {
   right: 0;
 }
 header .supported-platforms {
+  width: 80%;
+  margin: 3% auto 0;
+  padding: 3% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,9 +391,6 @@ header .supported-platforms {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 80%;
-  margin: 3% auto 0;
-  padding: 3% 0;
   border-top: 2px solid #4D4D4D;
   border-bottom: 2px solid #4D4D4D;
 }
@@ -422,24 +422,24 @@ header .supported-platforms .platform {
 #about {
   height: 1400px;
   width: 100vw;
-  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #ffffff;
 }
 #about h2 span {
   display: block;
 }
 #about .ideas-area {
   position: absolute;
+  height: 30%;
+  padding: 5px 5%;
+  top: 25%;
   display: grid;
   grid-template-columns: auto auto;
-  height: 30%;
-  top: 25%;
-  padding: 5px 5%;
 }
 #about .ideas-area .idea {
   margin: 0 2.5px;
@@ -490,6 +490,7 @@ header .supported-platforms .platform {
           transform: translate(-50%);
 }
 #about .quote-area .quote-author {
+  margin-top: 5.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,7 +500,6 @@ header .supported-platforms .platform {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5.5%;
   gap: 1%;
 }
 #about .quote-area .quote-author .author {
@@ -552,11 +552,11 @@ header .supported-platforms .platform {
 #user-opinions .opinions-container .opinion .opinion-text {
   position: absolute;
   margin-top: 2%;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-size: 22px;
   width: 80%;
   left: 5%;
   text-align: left;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 22px;
 }
 #user-opinions .opinions-container .opinion .user {
   position: relative;
@@ -607,23 +607,25 @@ header .supported-platforms .platform {
 #benefits .benefits-container {
   position: absolute;
   height: 55%;
-  width: 90%;
-  padding: 0.5%;
+  width: 100%;
+  padding: 2%;
   top: 27%;
   left: 50%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color: transparent;
+  grid-template-columns: repeat(3, 4fr);
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
-  gap: 1%;
+  gap: 1em;
 }
 #benefits .benefits-container .benefit-card {
   display: grid;
-  grid-template-columns: auto;
   grid-template-rows: 50% 15% 35%;
-  background-color: transparent;
   text-align: center;
+  -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  border-bottom-right-radius: 8px;
 }
 #benefits .benefits-container .benefit-card .benefit-card-photo {
   display: -webkit-box;
@@ -635,6 +637,12 @@ header .supported-platforms .platform {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+#benefits .benefits-container .benefit-card:hover {
+  -webkit-box-shadow: 5px 5px #81ADC8;
+          box-shadow: 5px 5px #81ADC8;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 #benefits .benefits-btn {
   height: 4.5em;
@@ -712,9 +720,9 @@ header .supported-platforms .platform {
 }
 #episodes .episodes-container .episode-card .card-cover .card-cover-items .card-cover-line {
   height: 1%;
+  background-color: #4D4D4D;
   width: 110%;
   margin-left: 5.5%;
-  background-color: #4D4D4D;
 }
 #episodes .episodes-container .episode-card .card-info {
   display: grid;
@@ -754,13 +762,32 @@ header .supported-platforms .platform {
   height: 1200px;
   width: 100vw;
   background-color: #ffffff;
+  text-align: center;
+}
+#become-sponsor img:nth-child(1) {
+  position: absolute;
+  top: 6%;
+  left: 23%;
+}
+#become-sponsor img:nth-child(2) {
+  position: absolute;
+  top: 22.5%;
+  right: 0.5%;
+}
+#become-sponsor img:nth-child(3) {
+  position: absolute;
+  height: 80px;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  top: 63%;
+  left: 26.5%;
 }
 #become-sponsor .sponsoring-offers {
   position: relative;
   height: 80%;
   width: 100%;
   padding: 5% 0;
-  top: 24%;
+  top: 19%;
   left: 50%;
   display: grid;
   grid-template-columns: repeat(3, 4fr);
@@ -771,6 +798,7 @@ header .supported-platforms .platform {
           transform: translate(-50%, 0);
 }
 #become-sponsor .sponsoring-offers .offer-card {
+  position: relative;
   height: 100%;
   display: grid;
   grid-template-rows: 57% 43%;
@@ -820,6 +848,109 @@ header .supported-platforms .platform {
   padding-left: 5.5%;
 }
 #become-sponsor .sponsoring-offers .offer-card .sponsoring-benefits .sponsoring-benefits-list li {
-  font-size: 16px;
   margin-bottom: 6%;
+  font-size: 16px;
+}
+#become-sponsor .sponsoring-offers .offer-card .sponsoring-benefits .sponsoring-benefits-list li span {
+  font-weight: 700;
+}
+#become-sponsor .sponsoring-offers .offer-special .offer-info {
+  border: 2px solid #CD4631;
+  background-color: #F7EDE8;
+}
+#become-sponsor .sponsoring-offers .offer-special .offer-info .offer-info-special {
+  position: absolute;
+  padding: 1%;
+  top: 7.5%;
+  right: 10.7%;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #CD4631;
+  border-radius: 3px;
+}
+#become-sponsor .sponsoring-offers .offer-special .sponsoring-benefits {
+  background-color: #F7EDE8;
+  border: 2px solid #CD4631;
+}
+
+#news-section {
+  height: 1300px;
+  width: 100vw;
+  background-color: #ffffff;
+}
+#news-section .news-container {
+  position: relative;
+  height: 670px;
+  width: 91%;
+  top: 24%;
+  left: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 6fr);
+  -webkit-column-gap: 2%;
+     -moz-column-gap: 2%;
+          column-gap: 2%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+#news-section .news-container .news-card {
+  padding: 3%;
+  display: grid;
+  grid-template-rows: 54% 46%;
+  border: 2px solid #000000;
+  border-radius: 9px;
+}
+#news-section .news-container .news-card .news-card-info {
+  display: grid;
+  grid-template-rows: 35% 35% 10% 20%;
+  text-align: left;
+}
+#news-section .news-container .news-card .news-card-info .news-card-title {
+  margin-top: 1%;
+}
+#news-section .news-container .news-card .news-card-info .news-card-title p {
+  margin-bottom: 1%;
+  color: #4D4D4D;
+  text-transform: uppercase;
+}
+#news-section .news-container .news-card .news-card-info .news-card-title h2 {
+  font-size: 36px;
+}
+#news-section .news-container .news-card .news-card-info .news-card-line {
+  margin-top: 2.2%;
+  height: 1%;
+  background-color: #4D4D4D;
+}
+#news-section .news-container .news-card .news-card-info .news-card-tags-date {
+  position: relative;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+#news-section .news-container .news-card .news-card-info .news-card-tags-date .news-card-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+#news-section .news-container .news-card .news-card-info .news-card-tags-date .news-card-tags img {
+  margin-right: 3%;
+}
+#news-section .news-container .news-card .news-card-info .news-card-tags-date .news-card-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+#news-section .news-btn {
+  top: 33%;
 }/*# sourceMappingURL=main.css.map */
