@@ -133,6 +133,8 @@
 .scribble {
   position: absolute;
   top: -76px;
+  left: 50%;
+  z-index: 1;
 }
 
 .section-title {
@@ -609,7 +611,7 @@ header .supported-platforms .platform {
   height: 55%;
   width: 100%;
   padding: 2%;
-  top: 27%;
+  top: 24%;
   left: 50%;
   display: grid;
   grid-template-columns: repeat(3, 4fr);
@@ -877,23 +879,47 @@ header .supported-platforms .platform {
   height: 1300px;
   width: 100vw;
   background-color: #ffffff;
+  z-index: 1;
+}
+#news-section .news-black-star {
+  position: absolute;
+  margin-top: 200px;
+  top: 3.2%;
+  left: 3%;
+  z-index: 2;
+}
+#news-section .news-black-swirl {
+  position: absolute;
+  top: 72%;
+  right: 4%;
 }
 #news-section .news-container {
-  position: relative;
+  position: absolute;
   height: 670px;
-  width: 91%;
-  top: 24%;
+  width: 81%;
+  top: 26%;
   left: 50%;
-  display: grid;
-  grid-template-columns: repeat(2, 6fr);
-  -webkit-column-gap: 2%;
-     -moz-column-gap: 2%;
-          column-gap: 2%;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  background-color: white;
+}
+#news-section .news-container .news-card:nth-of-type(1) {
+  border-top-left-radius: 0px;
 }
 #news-section .news-container .news-card {
-  padding: 3%;
+  width: 570px;
+  padding: 1%;
   display: grid;
   grid-template-rows: 54% 46%;
   border: 2px solid #000000;
@@ -951,6 +977,96 @@ header .supported-platforms .platform {
       -ms-flex-align: end;
           align-items: flex-end;
 }
+#news-section .news-container .news-card:nth-of-type(1) {
+  -webkit-box-shadow: 10px 10px black;
+          box-shadow: 10px 10px black;
+}
 #news-section .news-btn {
-  top: 33%;
+  top: 88%;
+}
+
+#app-advertisement {
+  height: 900px;
+  width: 100vw;
+  background-color: #EDF3F7;
+}
+#app-advertisement .title-special-guest {
+  position: relative;
+  top: 7.3%;
+  display: inline;
+  padding: 0.3%;
+  font-weight: 700;
+  color: #CD4631;
+  background-color: transparent;
+  border: 1px solid #CD4631;
+  border-radius: 6px;
+}
+#app-advertisement .app-section-title {
+  position: absolute;
+  left: 50%;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 59px;
+  color: #000000;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  letter-spacing: -0.02em;
+  top: 19%;
+}
+#app-advertisement .app-section-title span {
+  display: block;
+}
+#app-advertisement .app-text-under-section-title {
+  position: absolute;
+  left: 50%;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 22px;
+  color: #4D4D4D;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  top: 37%;
+}
+#app-advertisement .app-btn {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+#app-advertisement .app-platforms p {
+  position: absolute;
+  top: 71%;
+  left: 50%;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 18px;
+  color: #4D4D4D;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+#app-advertisement .app-platforms div {
+  padding: 0.8% 3%;
+  position: absolute;
+  top: 73%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: transparent;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+#app-advertisement .app-platforms div button {
+  margin-right: 13%;
+  padding: 9%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+#app-advertisement .app-platforms div button:nth-of-type(3) {
+  margin-right: 0px;
 }/*# sourceMappingURL=main.css.map */
