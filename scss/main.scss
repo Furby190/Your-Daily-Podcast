@@ -516,6 +516,10 @@ header {
                     justify-content: left;
                     img {
                         margin-right: 2%;
+                        transition: transform .5s;
+                    }
+                    img:hover {
+                        transform: scale(1.05);
                     }
                 }
             }
@@ -718,6 +722,10 @@ header {
 
                         img {
                             margin-right: 3%;
+                            transition: transform .5s;
+                        }
+                        img:hover {
+                            transform: scale(1.05);
                         }
                     }
                     .news-card-date {
@@ -807,24 +815,157 @@ header {
             justify-content: space-around;
             background-color: transparent;
             transform: translate(-50%);
-
+            
             button {
                 margin-right: 13%;
                 padding: 9%;
                 background-color: transparent;
                 border: none;
-                cursor: pointer; 
-
+                cursor: pointer;
+                transition: transform .5s;   
             }
             button:nth-of-type(3) {
                 margin-right: 0px;
             }
+            button:hover {
+                transform: scale(1.05);
+            }
         }
     }
+}
 
+footer {
+    height: 620px;
+    width: 100vw;
+    padding: 1.5% 7% 0 7%;
+    display: grid;
+    grid-template-rows: 75% 25%;
+    background-color: $pure-white;
+    border-top: 1px solid $dark-gray;
 
+    .footer-main {
+        width: 100%;
+        padding: 0 2%;
+        display: grid;
+        grid-template-columns: 25% 35% 40%;
 
+        .footer-text-area-1 {
+            padding-right: 30%;
+            padding-top: 25%;
+            .footer-logo {
+                position: relative;
+                display: grid;
+                grid-template-columns: auto auto;
+                p {
+                    position: absolute;
+                    top: 74%;
+                    left: 44%;
+                }
+            }
+            p {
+                position: relative;
+                top: 15%;
+                font-size: 14px;
+                font-family: 'Montserrat Alternates';
+                font-weight: 500;
+                color: $dark-gray;
+            }
+            .socials {
+                position: relative;
+                top: 29%;
+                transition: scale 9s;
+                button {
+                    margin-right: 3%;
+                    padding: 3%;
+                    cursor: pointer;
+                    border: none;
+                    background-color: transparent;
+                    transition: transform .5s;
+                }
+                button:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .footer-text-area-2 {
+            padding-top: 13%;
+            padding-left: 14%;
+            display: grid;
+            grid-template-columns: 50% 50%;
 
+            .footer-menu-1 {
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                p:nth-of-type(2) {
+                    color: $title-red;
+                }
+            }
+            .footer-menu-2 {
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                p:nth-of-type(1) {
+                    color: $title-red;
+                }
+            }
+        }
+        .footer-text-area-3 {
+            margin-left: 10%;
+            padding-top: 13%;
+            padding-right: 10%;
+            display: grid;
+            grid-template-rows: 35% 65%;
+
+            p {
+                margin-bottom: 6%;
+                font-size: 16px;
+                font-family: 'Montserrat Alternates';
+                font-weight: 500;
+                color: $dark-gray;
+            }
+            .footer-platforms {
+                div {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                }
+            }
+            .footer-distribution-platforms {
+                div {
+                    img {
+                        padding-right: 6%;
+                    }
+                }
+            }
+        }
+    }
+    .footnote {
+        .footnote-line {
+            height: 1px;
+            margin-bottom: 3%;
+            background-color: $dark-gray;
+        }
+        .footnote-text {
+            display: grid;
+            grid-template-columns: auto auto;
+            color: $dark-gray;
+            p:nth-of-type(1) {
+                display: flex;
+                justify-content: left;
+                span {
+                    display: flex;
+                    align-items: center;
+                    color: $title-red;
+                }
+            }
+            p:nth-of-type(2) {
+                display: flex;
+                justify-content: right;
+            }
+        }
+    }
 }
 
 
