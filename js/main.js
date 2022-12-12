@@ -1,20 +1,17 @@
 const moreBtn = document.querySelector('.more-btn'); 
-const dropdownMore = document.querySelector('.dropdown-content')
+const dropdownMore = document.querySelector('.dropdown-content');
+const navArrow = document.querySelector('.nav-arrow-image');
 
 
-const downUpMoreMenu = () => {
+const showMoreSectionControl = () => {
+    dropdownMore.classList.toggle('active');
+}
 
-    if(dropdownMore.style.display === 'none') {
-        dropdownMore.style.display = 'block';
-    } else {
-        dropdownMore.style.display = 'none';
-    }
+const navArrowRotate = () => {
+    navArrow.classList.toggle('arrow-rotate');
 }
 
 
-
-
-
-moreBtn.addEventListener('click', downUpMoreMenu);
-
+moreBtn.addEventListener('click', showMoreSectionControl);
+moreBtn.addEventListener('click', navArrowRotate);
 

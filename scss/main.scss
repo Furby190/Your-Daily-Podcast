@@ -13,8 +13,8 @@ body {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-.active {
-    display: block;
+.arrow-rotate {
+    transform: rotate(-180deg);
 }
 
 header {
@@ -40,7 +40,7 @@ header {
         }
         
         .nav-menu {
-            position: absolute;
+            position: relative;
             height: 45%;
             width: 30%;
             padding: 2% 0;
@@ -52,41 +52,89 @@ header {
             transform: translate(-50%, -50%);
             
             .nav-menu-btn  {
-                height: 140%;
+                height: 130%;
                 width: 26%;
+                position: relative;
                 font-family: 'Montserrat Alternates', sans-serif;
                 color: $pure-black;
+                background-color:transparent;
                 text-decoration: none;
+                border: none;
                 border-bottom-right-radius: 6px;
                 transition: box-shadow .3s;
                 cursor: pointer;
+
+                a {
+                    position: relative;
+                    padding: 3% 11%;
+                    color: $pure-black;
+                    text-decoration: none;
+                }  
+            }
+            .nav-menu-btn:nth-of-type(2) {
+                width: 22%;
+                a {
+                   padding: 3% 21%;
+                }
             }
             .more-menu-btn {
                 position: relative;
-                height: 140%;
+                height: 120%;
                 width: 26%;
-                padding: 0 0 0 2.5%;
-                background-color: transparent;
+                display: flex;
+                justify-content: center;
                 border-top-right-radius: 6px;
                 transition: box-shadow .3s;
-                
+                cursor: pointer;
+                z-index: 3;
+
                 .more-btn {
-                    padding: 4% 10% 2%;
-                }
-                button {
+                    padding: 6% 18%;
                     display: flex;
                     flex-direction: row;
-                    background-color: transparent;
                     font-family: 'Montserrat Alternates', sans-serif;
-                    font-size: 16px;
+                    color: $pure-black;
+                    background-color: transparent;
                     border: none;
-                    border-radius: 6px;
                     cursor: pointer;
+
+                    .nav-arrow-image {
+                        margin-left: 10%;
+                    }
                 }
-                img {
-                    margin-top: 2%;
-                    margin-left: 5%;
+                .dropdown-content {
+                    position: absolute;
+                    display: none;
+                    width: 100%;
+                    margin-top: 12%;
+                    top: 82%;
+                    left: 0;
+                    border-bottom-right-radius: 6px;
+
+                    button {
+                        width: 100%;
+                        margin-bottom: 4%;
+                        font-family: 'Montserrat Alternates', sans-serif;
+                        color: $pure-black;
+                        background-color: transparent;
+                        border: none;
+                        transition: box-shadow .3s;
+                        a {
+                            padding: 3% 0;
+                            display: block;
+                            text-align: center;
+                            text-decoration: none;
+                            color: $pure-black;
+                        }   
+                    }
+                    button:hover {
+                        box-shadow: 3px 0  0.1px -1px $darker-main-color;
+                    } 
+                } 
+                .dropdown-content.active {
+                    display: block;
                 }
+                 
             }
             .more-menu-btn:hover {
                 box-shadow: 2px -2px  $darker-main-color;
@@ -94,29 +142,7 @@ header {
             .nav-menu-btn:hover {
                 box-shadow: 2px  2px $darker-main-color;
             } 
-            .dropdown-content {
-                position: absolute;
-                display: none;
-                width: 100%;
-                padding-top: 10%;
-                top: 82%;
-                left: 0;
-                background-color: transparent;
-                border-bottom-right-radius: 6px;
-                
-                a {
-                    display: block;
-                    margin-bottom: 2%;
-                    padding: 3% 3% 2%;
-                    text-align: center;
-                    text-decoration: none;
-                    color: $pure-black;
-                    transition: box-shadow .3s;
-                } 
-                a:hover {
-                    box-shadow: 3px 0  0.1px -1px $darker-main-color;
-                }
-            } 
+            
         }
         .nav-main-btns {
             position: absolute;
@@ -144,6 +170,11 @@ header {
                 color: $pure-black;
                 background-color: transparent;
                 text-decoration: none;
+                a {
+                    text-decoration: none;
+                    color: $pure-black;
+
+                }
             }
             .nav-main-btn:nth-child(2) {
                 color: $pure-white;
@@ -920,7 +951,7 @@ footer {
             grid-template-rows: 35% 65%;
 
             p {
-                margin-bottom: 6%;
+                margin-bottom: 10%;
                 font-size: 16px;
                 font-family: 'Montserrat Alternates';
                 font-weight: 500;
@@ -958,6 +989,7 @@ footer {
                     display: flex;
                     align-items: center;
                     color: $title-red;
+                    margin-left: 1%;
                 }
             }
             p:nth-of-type(2) {
@@ -967,7 +999,4 @@ footer {
         }
     }
 }
-
-
-
 

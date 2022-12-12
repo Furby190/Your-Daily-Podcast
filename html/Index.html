@@ -21,24 +21,25 @@
     <header>
         <nav>
             <div class="nav-logo">
-                <img src="../svg-icons/Header/Nav-Main-Logo/logo.svg" alt="Nav logo circle">
+                <img  src="../svg-icons/Header/Nav-Main-Logo/logo.svg" alt="Nav logo circle">
             </div>
             <div class="nav-menu">
-                <a class="nav-menu-btn" href="#episodes">Episodes</a>
-                <a class="nav-menu-btn" href="#about">About</a>
+                <button class="nav-menu-btn"><a href="#episodes">Episodes</a></button>
+                <button class="nav-menu-btn"><a href="#about">About</a></button>
                 <div class="more-menu-btn">
                     <button class="more-btn">More
-                        <img src="../svg-icons/Header/More-Icon-Down/Arrow - Down.svg" alt="">
+                        <img class="nav-arrow-image" src="../svg-icons/Header/More-Icon-Down/Arrow - Down.svg" alt="Arrow">
                     </button>
                     <div class="dropdown-content">
-                        <a href="../html/PodCast.html">PodCast</a>
-                        <a href="../html/News.html">News</a>
-                        <a href="../html/Artwork.html">Artwork</a>
+                        <button><a href="../html/PodCast.html">PodCast</a></button>
+                        <button><a href="../html/News.html">News</a></button>
+                        <button><a href="../html/Artwork.html">Artwork</a></button>
                     </div>
-                </div> 
+                </div>
+                
             </div>
             <div class="nav-main-btns">
-                <a class="nav-main-btn" href="#episodes">Recent<span>Episodes</span></a>
+                <button class="nav-main-btn"><a href="#episodes">Recent Episodes</a></button>
                 <button class="nav-main-btn">Subscribe</button>
             </div>
         </nav>
@@ -47,13 +48,12 @@
         <p class="header-short-description">We cover all kinds of categories and <span>a weekly special guest.</span></p>
         <button class="header-sub-btn darker-btn btn-special-animation">Subscribe</button>
         <div class="hero-shape-swirl">
-            <img src="../svg-icons/Header/Hero-Shape-Swirl/Hero-Shape-Swirl.svg" alt="black swirl">
+            <img src="../svg-icons/Header/Hero-Shape-Swirl/Hero-Shape-Swirl.svg" alt="Black swirl">
         </div>
         <div class="hero-shape-stars">
-            <img src="../svg-icons/Header/Hero-Shape-Stars/Hero-Shape-Stars.svg" alt="">    
+            <img src="../svg-icons/Header/Hero-Shape-Stars/Hero-Shape-Stars.svg" alt="Star">    
         </div>
 
-       
         <div id="thumbnail-carousel" class="splide" >
             <div class="splide__track">
                 <ul class="splide__list">
@@ -710,7 +710,6 @@
         </div>
 
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="../js/swiper-opinions.js"></script>

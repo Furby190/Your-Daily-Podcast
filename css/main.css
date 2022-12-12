@@ -180,8 +180,9 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-.active {
-  display: block;
+.arrow-rotate {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 header {
@@ -207,7 +208,7 @@ header nav .nav-logo {
           transform: translate(0, -50%);
 }
 header nav .nav-menu {
-  position: absolute;
+  position: relative;
   height: 45%;
   width: 30%;
   padding: 2% 0;
@@ -223,11 +224,14 @@ header nav .nav-menu {
           transform: translate(-50%, -50%);
 }
 header nav .nav-menu .nav-menu-btn {
-  height: 140%;
+  height: 130%;
   width: 26%;
+  position: relative;
   font-family: "Montserrat Alternates", sans-serif;
   color: #000000;
+  background-color: transparent;
   text-decoration: none;
+  border: none;
   border-bottom-right-radius: 6px;
   -webkit-transition: -webkit-box-shadow 0.3s;
   transition: -webkit-box-shadow 0.3s;
@@ -235,22 +239,38 @@ header nav .nav-menu .nav-menu-btn {
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
   cursor: pointer;
 }
+header nav .nav-menu .nav-menu-btn a {
+  position: relative;
+  padding: 3% 11%;
+  color: #000000;
+  text-decoration: none;
+}
+header nav .nav-menu .nav-menu-btn:nth-of-type(2) {
+  width: 22%;
+}
+header nav .nav-menu .nav-menu-btn:nth-of-type(2) a {
+  padding: 3% 21%;
+}
 header nav .nav-menu .more-menu-btn {
   position: relative;
-  height: 140%;
+  height: 120%;
   width: 26%;
-  padding: 0 0 0 2.5%;
-  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-top-right-radius: 6px;
   -webkit-transition: -webkit-box-shadow 0.3s;
   transition: -webkit-box-shadow 0.3s;
   transition: box-shadow 0.3s;
   transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  cursor: pointer;
+  z-index: 3;
 }
 header nav .nav-menu .more-menu-btn .more-btn {
-  padding: 4% 10% 2%;
-}
-header nav .nav-menu .more-menu-btn button {
+  padding: 6% 18%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,16 +278,49 @@ header nav .nav-menu .more-menu-btn button {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: transparent;
   font-family: "Montserrat Alternates", sans-serif;
-  font-size: 16px;
+  color: #000000;
+  background-color: transparent;
   border: none;
-  border-radius: 6px;
   cursor: pointer;
 }
-header nav .nav-menu .more-menu-btn img {
-  margin-top: 2%;
-  margin-left: 5%;
+header nav .nav-menu .more-menu-btn .more-btn .nav-arrow-image {
+  margin-left: 10%;
+}
+header nav .nav-menu .more-menu-btn .dropdown-content {
+  position: absolute;
+  display: none;
+  width: 100%;
+  margin-top: 12%;
+  top: 82%;
+  left: 0;
+  border-bottom-right-radius: 6px;
+}
+header nav .nav-menu .more-menu-btn .dropdown-content button {
+  width: 100%;
+  margin-bottom: 4%;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+header nav .nav-menu .more-menu-btn .dropdown-content button a {
+  padding: 3% 0;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+header nav .nav-menu .more-menu-btn .dropdown-content button:hover {
+  -webkit-box-shadow: 3px 0 0.1px -1px #eec1ab;
+          box-shadow: 3px 0 0.1px -1px #eec1ab;
+}
+header nav .nav-menu .more-menu-btn .dropdown-content.active {
+  display: block;
 }
 header nav .nav-menu .more-menu-btn:hover {
   -webkit-box-shadow: 2px -2px #eec1ab;
@@ -276,32 +329,6 @@ header nav .nav-menu .more-menu-btn:hover {
 header nav .nav-menu .nav-menu-btn:hover {
   -webkit-box-shadow: 2px 2px #eec1ab;
           box-shadow: 2px 2px #eec1ab;
-}
-header nav .nav-menu .dropdown-content {
-  position: absolute;
-  display: none;
-  width: 100%;
-  padding-top: 10%;
-  top: 82%;
-  left: 0;
-  background-color: transparent;
-  border-bottom-right-radius: 6px;
-}
-header nav .nav-menu .dropdown-content a {
-  display: block;
-  margin-bottom: 2%;
-  padding: 3% 3% 2%;
-  text-align: center;
-  text-decoration: none;
-  color: #000000;
-  -webkit-transition: -webkit-box-shadow 0.3s;
-  transition: -webkit-box-shadow 0.3s;
-  transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
-}
-header nav .nav-menu .dropdown-content a:hover {
-  -webkit-box-shadow: 3px 0 0.1px -1px #eec1ab;
-          box-shadow: 3px 0 0.1px -1px #eec1ab;
 }
 header nav .nav-main-btns {
   position: absolute;
@@ -339,6 +366,10 @@ header nav .nav-main-btns .nav-main-btn:nth-child(1) {
   color: #000000;
   background-color: transparent;
   text-decoration: none;
+}
+header nav .nav-main-btns .nav-main-btn:nth-child(1) a {
+  text-decoration: none;
+  color: #000000;
 }
 header nav .nav-main-btns .nav-main-btn:nth-child(2) {
   color: #ffffff;
@@ -1197,7 +1228,7 @@ footer .footer-main .footer-text-area-3 {
   grid-template-rows: 35% 65%;
 }
 footer .footer-main .footer-text-area-3 p {
-  margin-bottom: 6%;
+  margin-bottom: 10%;
   font-size: 16px;
   font-family: "Montserrat Alternates";
   font-weight: 500;
@@ -1236,6 +1267,7 @@ footer .footnote .footnote-text p:nth-of-type(1) span {
       -ms-flex-align: center;
           align-items: center;
   color: #CD4631;
+  margin-left: 1%;
 }
 footer .footnote .footnote-text p:nth-of-type(2) {
   display: -webkit-box;
