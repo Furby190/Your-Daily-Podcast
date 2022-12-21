@@ -1,0 +1,97 @@
+#news-section {
+    height: 1300px;
+    width: 100vw;
+    background-color: $pure-white;
+    z-index: 1;
+    
+    .news-black-star {
+        position: absolute;
+        margin-top: 200px;
+        top: 3.2%;
+        left: 3%;
+        z-index: 2;
+    }
+    .news-black-swirl {
+        position: absolute;
+        top: 72%;
+        right: 4%;
+    }
+    .news-container {
+        position: absolute;
+        height: 670px;
+        width: 81%;
+        top: 26%;
+        left: 50%;
+        z-index: 5;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        transform: translate(-50%, 0);
+        background-color: white;
+        
+        .news-card:nth-of-type(1) {
+            border-top-left-radius: 0px;
+        }
+        .news-card {
+            width: 570px;
+            padding: 1%;
+            display: grid;
+            grid-template-rows: 54% 46%;
+            border: 2px solid $pure-black;
+            border-radius: 9px;
+
+            .news-card-info {
+                display: grid;
+                grid-template-rows: 35% 35% 10% 20%;
+                text-align: left;
+
+                .news-card-title {
+                    margin-top: 1%;
+                    p {
+                        margin-bottom: 1%;
+                        color:$dark-gray;
+                        text-transform: uppercase;
+                    }
+                    h2 {
+                        font-size: 36px;
+                    }
+                }
+                .news-card-line {
+                    margin-top: 2.2%;
+                    @include line-shared-style;
+                }
+                .news-card-tags-date {
+                    position: relative;
+                    margin-top: 5%;
+                    display: grid;
+                    grid-template-columns: 70% 30%;
+
+                    .news-card-tags {
+                        display: flex;
+                        justify-content:left;
+                        align-items:flex-end;
+
+                        img {
+                            margin-right: 3%;
+                            transition: transform .5s;
+                        }
+                        img:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+                    .news-card-date {
+                        display: flex;
+                        justify-content: right;
+                        align-items: flex-end;  
+                    }  
+                }
+            }
+        }
+        .news-card:nth-of-type(1) {
+            box-shadow: 10px 10px black;
+        }
+    }
+    .news-btn {
+        top: 88%;
+    }
+}

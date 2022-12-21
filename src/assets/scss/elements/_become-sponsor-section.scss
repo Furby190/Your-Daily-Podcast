@@ -1,0 +1,119 @@
+#become-sponsor {
+    height: 1200px;
+    width: 100vw;
+    background-color: $pure-white;
+    text-align: center;
+    
+    img:nth-child(1) {
+        position: absolute;
+        top: 6%;
+        left: 23%;
+    }
+    img:nth-child(2) {
+        position: absolute;
+        top: 22.5%;
+        right: .5%;
+    }
+    img:nth-child(3) {
+        position: absolute;
+        height: 80px;
+        transform: rotate(50deg);
+        top: 63%;
+        left: 26.5%;
+    }
+    
+    .sponsoring-offers {
+        position: relative;
+        height: 80%;
+        width: 100%;
+        padding: 5% 0;
+        top: 19%;
+        left: 50%;
+        display: grid;
+        grid-template-columns: repeat(3, 4fr);
+        column-gap: 3%;
+        transform: translate(-50%, 0);
+        
+        .offer-card {
+            position: relative;
+            height: 100%;
+            display: grid;
+            grid-template-rows: 57% 43%;
+
+            .offer-info {
+                margin-bottom: 8.5%;
+                padding: 10% 10% 13% 10%;
+                display: grid;
+                grid-template-rows: 30% 30% 40%;
+                text-align: left;
+                border-radius: 9px;
+                border: 2px solid $pure-black;
+
+                p {
+                    font-size: 14px;
+                }
+                h2 {
+                    font-size: 36px;
+                }
+                .subscription {
+                    display: grid;
+                    grid-template-columns: 60% 40%;
+
+                    .sponsoring-btn {
+                        button {
+                            margin-top: 35%;
+                            padding: 10% 20%;
+                            justify-content: left;
+                        }
+                    }
+                    .price {
+                        padding-top: 59%;
+                        text-align: right;
+                    } 
+                }
+            }
+            .sponsoring-benefits {
+                padding: 10%;
+                text-align: left;
+                border: 2px solid $pure-black;
+                border-radius: 9px;
+                p {
+                    margin-bottom: 10%;
+                    font-size: 14px;
+                    color: $dark-gray;
+                }
+                .sponsoring-benefits-list {
+                    padding-left: 5.5%;
+                    li {
+                        margin-bottom: 6%;
+                        font-size: 16px;
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+        .offer-special {
+            .offer-info {
+                border: 2px solid $title-red;
+                background-color: $main-color;
+
+                .offer-info-special {
+                    position: absolute;
+                    padding: 1%;
+                    top: 7.5%;
+                    right: 10.7%;
+                    text-transform: uppercase;
+                    color: $pure-white;
+                    background-color: $title-red;
+                    border-radius: 3px;   
+                }
+            }
+            .sponsoring-benefits {
+                background-color: $main-color;
+                border: 2px solid $title-red;
+            }
+        }
+    }
+}

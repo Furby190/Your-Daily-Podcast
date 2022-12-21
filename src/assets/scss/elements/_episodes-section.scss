@@ -1,0 +1,104 @@
+#episodes {
+    position: relative;
+    height: 1460px;
+    width: 100vw;
+    background-color: $main-color;
+
+    .episodes-btn {
+        top: 26.4%;
+    }
+    .episodes-sparkle {
+        position: absolute;
+        top: 11%;
+        left: 84%;
+    }
+    .episodes-container {
+        position: relative;
+        height: 62.4%;
+        width: 92%;
+        top: 20%;
+        left: 50%;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content:space-around;
+        transform: translate(-50%, 0);
+
+        .episode-card {
+            position: relative;
+            height: 249px;
+            width: 570px;
+            padding: 2%;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 84% 16%;
+            background-color: $pure-white;
+            border: 1px solid black;
+            border-radius: 9px;
+            
+            .card-cover {
+                display: grid;
+                grid-template-columns: 30% 60%;
+
+                .card-cover-image {
+                    img {
+                        border-radius: 10px;
+                    }
+                }
+                .card-cover-items {
+                    display: grid;
+                    grid-template-columns: auto;
+                    grid-template-rows: 47.5% 5% 47.5%;
+
+                    .card-cover-title {
+                        height: 70%;
+                        width: 110%;
+                        margin: 5% 0 10% 5.5%;
+                        text-align: left;
+                        p {
+                            margin-bottom: 1.5%;
+                            font-weight: 700;
+                            color: $title-red;
+                        }
+                    }
+                    .card-cover-text {
+                        width: 110%;
+                        margin-left: 5.5%;
+                        padding-top: 3%;
+                        text-align: left;
+                        color: $dark-gray;
+                    }
+                    .card-cover-line {
+                        @include line-shared-style;
+                        width: 110%;                
+                        margin-left: 5.5%; 
+                    }
+                }
+            }
+            .card-info {
+                display: grid;
+                grid-template-columns: 65% 35%;
+  
+                .host-authors {
+                    display: flex;
+                    justify-content: right;
+                    align-items: center;
+                    flex-direction: row;
+                    img { 
+                        margin-left: 3%;
+                    }
+                }
+                .tags {
+                    display: flex;
+                    justify-content: left;
+                    img {
+                        margin-right: 2%;
+                        transition: transform .5s;
+                    }
+                    img:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+        }
+    }
+}

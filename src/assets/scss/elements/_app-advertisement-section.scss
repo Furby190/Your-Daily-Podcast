@@ -1,0 +1,88 @@
+#app-advertisement {
+    height: 900px;
+    width: 100vw;
+    background-color: $alice-blue;
+
+    // img:nth-of-type(1) {
+    //     position: absolute;
+    //     top: 200px;
+    // }
+    // img:nth-of-type(2) {
+    //     position: absolute;
+    //     top: 200px;
+    // }
+    // img:nth-of-type(3) {
+    //     position: absolute;
+    //     top: 200px;
+    // }
+    // img:nth-of-type(4) {
+    //     position: absolute;
+    //     top: 200px;
+    // }
+
+    .title-special-guest {
+        position: relative;
+        top: 7.3%;
+        display: inline;
+        padding: .3%;
+        font-weight: 700;
+        color: $title-red;
+        background-color: transparent;
+        border: 1px solid $title-red;
+        border-radius: 6px;
+    }
+    .app-section-title {
+        @include section-title-special;
+        top: 19%;
+        span {
+            display: block;
+        }
+    }
+    .app-text-under-section-title {
+        @include text-under-section-title-special;
+        top: 37%;
+    }
+    .app-btn {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .app-platforms {
+        p {
+            position: absolute;
+            top: 71%;
+            left: 50%;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 18px;
+            color: $dark-gray;
+            transform: translate(-50%);
+        }
+        div {
+            padding: .8% 3%;
+            position: absolute;
+            top: 73%;
+            left: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: transparent;
+            transform: translate(-50%);
+            
+            button {
+                margin-right: 13%;
+                padding: 9%;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                transition: transform .5s;   
+            }
+            button:nth-of-type(3) {
+                margin-right: 0px;
+            }
+            button:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}

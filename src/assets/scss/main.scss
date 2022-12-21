@@ -1,0 +1,27 @@
+@import './animations';
+@import './colors';
+@import './components';
+@import './@mixins';
+
+
+@import '../scss/elements/header';
+@import '../scss/elements/about-section';
+@import '../scss/elements/user-opinions-section';
+@import '../scss/elements/benefits-section';
+@import '../scss/elements/episodes-section';
+@import '../scss/elements/become-sponsor-section';
+@import '../scss/elements/news-section';
+@import '../scss/elements/app-advertisement-section';
+@import '../scss/elements/footer';
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+

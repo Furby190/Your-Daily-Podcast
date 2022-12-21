@@ -1,0 +1,61 @@
+#user-opinions {
+    height: 850px;
+    width: 100vw;
+    background-color: $alice-blue;
+    
+    img:nth-of-type(2) {
+        position: absolute;
+        top: 7.5%;
+        left: 20%;
+    }
+    .opinions-container {
+        height: 45%;
+        width: 63%;
+        top: 45%;
+        
+        .opinion {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            padding: 11%;
+            background-color: $pure-white;
+            border-radius: 8px;
+            
+            .opinion-quotation {
+                position: absolute;
+                top: 16%;
+                left: 5%;
+            }
+            .opinion-text {
+                position: absolute;
+                margin-top: 2%;
+                width: 80%;
+                left: 5%;
+                text-align: left;
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-size: 22px;
+            }
+            .user {
+                position: relative;
+                height: 50%;
+                width: 60%;
+                top: 90%;
+                left: -7.5%;
+
+                img:nth-of-type(1) {
+                    @include user-element-style;
+                    left: 0;
+                    border-radius: 50%;      
+                }
+                img:nth-of-type(2) {
+                    @include user-element-style;
+                    left: 35%;
+                }
+                p {
+                    @include user-element-style;
+                    left: 18%;
+                }
+            }            
+        }
+    }
+}
