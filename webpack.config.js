@@ -55,7 +55,7 @@ module.exports = {
                 test: /\.(png|jpg|jpeg|svg)$/i,
                 type: 'asset/resource',
                 generator: {
-                    filename: 'images/[name]-[hash][ext]'
+                    filename: 'img/[name]-[hash][ext]'
                 }
             }
         ]
@@ -63,6 +63,9 @@ module.exports = {
 
     plugins: [
         new HtmlWebpackPlugin({template: 'src/index.html'}),
+        new HtmlWebpackPlugin({template: 'src/Artwork'}),
+        new HtmlWebpackPlugin({template: 'src/News.html'}),
+        new HtmlWebpackPlugin({template: 'src/PodCast.html'}),
         new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output both options are

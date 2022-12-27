@@ -1,11 +1,10 @@
   import Swiper from 'swiper';
   import 'swiper/css';
+
   import 'swiper/css/navigation';
   import 'swiper/css/pagination';
 
- 
-
-  const swiper = new Swiper(".opinions-container", {
+  const swiper = new Swiper(".swiper", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {

@@ -1,10 +1,7 @@
 import Splide from '@splidejs/splide';
-// import Splide from '@splidejs/splide/src/css/themes/default';
-import '@splidejs/splide/dist/css/themes/splide-default.min.css';
-
+import '@splidejs/splide/dist/css/splide.min.css';
 
 new Splide( '.splide' ).mount();
-
 
 export function splideCarousel() {
     document.addEventListener( 'DOMContentLoaded', function () {
