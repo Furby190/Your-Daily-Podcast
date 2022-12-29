@@ -1,61 +1,137 @@
-#user-opinions {
-    height: 850px;
-    width: 100vw;
-    background-color: $alice-blue;
-    
-    img:nth-of-type(2) {
-        position: absolute;
-        top: 7.5%;
-        left: 20%;
-    }
-    .opinions-container {
-        height: 45%;
-        width: 63%;
-        top: 45%;
+@media (min-width: 376px) {
+    #user-opinions {
+        height: 500px;
+        width: 100vw;
+        background-color: $alice-blue;
         
-        .opinion {
-            position: relative;
-            height: 100%;
-            width: 100%;
-            padding: 11%;
-            background-color: $pure-white;
-            border-radius: 8px;
+        img:nth-of-type(2) {
+            position: absolute;
+            width: 10%;
+            top: 7%;
+            left: 16%;
+        }
+        .opinions-container {
+            height: 45%;
+            width: 93%;
+            top: 35%;
             
-            .opinion-quotation {
-                position: absolute;
-                top: 16%;
-                left: 5%;
-            }
-            .opinion-text {
-                position: absolute;
-                margin-top: 2%;
-                width: 80%;
-                left: 5%;
-                text-align: left;
-                font-family: 'Montserrat Alternates', sans-serif;
-                font-size: 22px;
-            }
-            .user {
+            .opinion {
                 position: relative;
-                height: 50%;
-                width: 60%;
-                top: 90%;
-                left: -7.5%;
+                height: 100%;
+                width: 100%;
+                padding: 11%;
+                background-color: $pure-white;
+                border-radius: 8px;
+                
+                .opinion-quotation {
+                    position: absolute;
+                    width: 7%;
+                    top: 15%;
+                    left: 5%; 
+                }
+                .opinion-text {
+                    position: absolute;
+                    margin-top: 13%;
+                    width: 80%;
+                    left: 5%;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-size: 13px;
+                    text-align: left;
+                    
+                }
+                .user {
+                    position: relative;
+                    height: 50%;
+                    width: 60%;
+                    top: 90%;
+                    left: -7.5%;
+    
+                    img:nth-of-type(1) {
+                        @include user-element-style;
+                        width: 19%;
+                        top: 20%;
+                        left: 0;
+                        border-radius: 50%;      
+                    }
+                    img:nth-of-type(2) {
+                        @include user-element-style;
+                        width: 38%;
+                        top: 20%;
+                        left: 53%;
+                    }
+                    p {
+                        @include user-element-style;
+                        left: 26%;
+                        top: 20%;
+                        font-size: 11px;
+                    }
+                }            
+            }
+        }
+    }
+}
 
-                img:nth-of-type(1) {
-                    @include user-element-style;
-                    left: 0;
-                    border-radius: 50%;      
+@media (min-width: 1200px) {
+
+    #user-opinions {
+        height: 850px;
+        width: 100vw;
+        background-color: $alice-blue;
+        
+        img:nth-of-type(2) {
+            position: absolute;
+            top: 7.5%;
+            left: 20%;
+        }
+        .opinions-container {
+            height: 45%;
+            width: 63%;
+            top: 45%;
+            
+            .opinion {
+                position: relative;
+                height: 100%;
+                width: 100%;
+                padding: 11%;
+                background-color: $pure-white;
+                border-radius: 8px;
+                
+                .opinion-quotation {
+                    position: absolute;
+                    top: 16%;
+                    left: 5%;
                 }
-                img:nth-of-type(2) {
-                    @include user-element-style;
-                    left: 35%;
+                .opinion-text {
+                    position: absolute;
+                    margin-top: 2%;
+                    width: 80%;
+                    left: 5%;
+                    text-align: left;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-size: 22px;
                 }
-                p {
-                    @include user-element-style;
-                    left: 18%;
-                }
-            }            
+                .user {
+                    position: relative;
+                    height: 50%;
+                    width: 60%;
+                    top: 90%;
+                    left: -7.5%;
+    
+                    img:nth-of-type(1) {
+                        @include user-element-style;
+                        left: 0;
+                        border-radius: 50%;      
+                    }
+                    img:nth-of-type(2) {
+                        @include user-element-style;
+                        left: 35%;
+                    }
+                    p {
+                        @include user-element-style;
+                        left: 18%;
+                    }
+                }            
+            }
         }
     }
 }

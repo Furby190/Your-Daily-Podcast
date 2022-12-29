@@ -1,136 +1,242 @@
-.section {
-    position: relative;
-    padding: 5%;
-    text-align: center;
-}
-
-.darker-btn {
-    padding: 2% 5%;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 1em;
-    background-color: $pure-black;
-    color: $pure-white;
-    cursor: pointer;
-    border: none;
-    border-radius: 8px;
-    text-transform: uppercase;
-    box-shadow: 6px 6px 0px $shadow-darker-btn;
-}
-
-.card-platforms {
-    img {
-        height: 1em ;
-        width: 1em ;
+@media (min-width: 376px) {
+    .section {
+        position: relative;
+        padding: 5%;
+        text-align: center;
     }
-    position: absolute;
-    top: 3%;
-}
+    
+    .darker-btn {
+        padding: 2% 5%;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 8px;
+        background-color: $pure-black;
+        color: $pure-white;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        text-transform: uppercase;
+        box-shadow: 6px 6px 0px $shadow-darker-btn;
+    }
+    
+    .card-platforms {
+        position: absolute;
+        top: 3%;
 
-.splide {
-    margin-top: 10%;
-    padding: 4%;
-}
-
-.splide__slide {
-    opacity: 0.6;
-
-    .card {
         img {
-            height: 375px;
-            width: 375px;  
-        } 
-        .vectors-first {
-            img {
-                height: 210%;
-                width: 210%;
-            }
-            position: absolute;
-            top: 17%;
-            left: 15%;
-        }
-        .vectors-second {
-            img {
-                height: 99%;
-                width: 99%;
-            }
-            position: absolute;
-            top: 12%;
-            right: 17%;
-        }
-        .vectors-third {
-            img {
-                height: 99%;
-                width: 99%;
-            }
-            position: absolute;
-            top: 28%;
-            left: 29%;
-        }
-        .vectors-fourth {
-            img {
-                height: 96%;
-                width: 96%;
-            }
-            position: absolute;
-            top: 2%;
-        }
-        .vectors-fifth {
-            img {
-                height: 200%;
-                width: 200%;
-            }
-            position: absolute;
-            top: 33%;
-            left: 6%;
-        }
-        .card-platforms {
-            img {
-                height: 100%;
-                width: 100%;
-            }
-            position: absolute;
-            top: 4%;
-            right: 4%;
+            height: 1em;
+            width: 1em;
         }
     }
-}
- 
-.splide__slide.is-active {
-    opacity: 1;
+    
+    .splide {
+        margin-top: 10%;
+        padding: 13%;
+    }
+    
+    .splide__slide {
+        opacity: 0.6;
+    
+        .card {
+            img {
+                height: 140px;
+                width: 140px;  
+            } 
+            .vectors-first, .vectors-second, .vectors-third, .vectors-fourth, .vectors-fifth {
+                display: none;
+            }
+            .card-platforms {
+                img {
+                    height: 60%;
+                    width: 60%;
+                }
+                position: absolute;
+                top: 1%;
+                right: -9%;
+            }
+        }
+    }
+     
+    .splide__slide.is-active {
+        opacity: 1;
+    }
+    
+    .scribble {
+        height: 70px;
+        width: 70px ;
+        position: absolute;
+        top: -36px;
+        left: 50%;
+        transform: translate(-50%,0);
+        z-index: 1;
+    }
+    
+    .section-title {
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 22px;
+        color: $pure-black;
+        transform: translate(-50%);
+        letter-spacing: -0.02em;
+    }
+    
+    .text-under-section-title {
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 10px;
+        color: $dark-gray;
+        transform: translate(-50%);
+    }
+    
+    .episode-card-shadow {
+        box-shadow: 10px 10px $shadow-blue;
+    }
+    
+    .red-title {
+        font-size: 13px;
+        color: $title-red;
+    }
 }
 
-.scribble {
-    position: absolute;
-    top: -76px;
-    left: 50%;
-    z-index: 1;
-}
 
-.section-title {
-    position: absolute;
-    top: 140px;
-    left: 50%;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 59px;
-    color: $pure-black;
-    transform: translate(-50%);
-    letter-spacing: -0.02em;
-}
-
-.text-under-section-title {
-    position: absolute;
-    top: 226px;
-    left: 50%;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 22px;
-    color: $dark-gray;
-    transform: translate(-50%);
-}
-
-.episode-card-shadow {
-    box-shadow: 10px 10px $shadow-blue;
-}
-
-.red-title {
-    color: $title-red;
+@media (min-width: 1200px) {
+    .section {
+        position: relative;
+        padding: 5%;
+        text-align: center;
+    }
+    
+    .darker-btn {
+        padding: 2% 5%;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 1em;
+        background-color: $pure-black;
+        color: $pure-white;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        text-transform: uppercase;
+        box-shadow: 6px 6px 0px $shadow-darker-btn;
+    }
+    
+    .card-platforms {
+        img {
+            height: 1em ;
+            width: 1em ;
+        }
+        position: absolute;
+        top: 3%;
+    }
+    
+    .splide {
+        margin-top: 10%;
+        padding: 4%;
+    }
+    
+    .splide__slide {
+        opacity: 0.6;
+    
+        .card {
+            img {
+                height: 375px;
+                width: 375px;  
+            } 
+            .vectors-first {
+                img {
+                    height: 210%;
+                    width: 210%;
+                }
+                position: absolute;
+                top: 17%;
+                left: 15%;
+            }
+            .vectors-second {
+                img {
+                    height: 99%;
+                    width: 99%;
+                }
+                position: absolute;
+                top: 12%;
+                right: 17%;
+            }
+            .vectors-third {
+                img {
+                    height: 99%;
+                    width: 99%;
+                }
+                position: absolute;
+                top: 28%;
+                left: 29%;
+            }
+            .vectors-fourth {
+                img {
+                    height: 96%;
+                    width: 96%;
+                }
+                position: absolute;
+                top: 2%;
+            }
+            .vectors-fifth {
+                img {
+                    height: 200%;
+                    width: 200%;
+                }
+                position: absolute;
+                top: 33%;
+                left: 6%;
+            }
+            .card-platforms {
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+                position: absolute;
+                top: 4%;
+                right: 4%;
+            }
+        }
+    }
+     
+    .splide__slide.is-active {
+        opacity: 1;
+    }
+    
+    .scribble {
+        position: absolute;
+        top: -76px;
+        left: 50%;
+        z-index: 1;
+    }
+    
+    .section-title {
+        position: absolute;
+        top: 140px;
+        left: 50%;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 59px;
+        color: $pure-black;
+        transform: translate(-50%);
+        letter-spacing: -0.02em;
+    }
+    
+    .text-under-section-title {
+        position: absolute;
+        top: 226px;
+        left: 50%;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 22px;
+        color: $dark-gray;
+        transform: translate(-50%);
+    }
+    
+    .episode-card-shadow {
+        box-shadow: 10px 10px $shadow-blue;
+    }
+    
+    .red-title {
+        color: $title-red;
+    }
 }

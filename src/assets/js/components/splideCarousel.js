@@ -15,9 +15,13 @@ export function splideCarousel() {
                 pagination  : false,
                 isNavigation: true,
                 breakpoints : {
-                  600: {
-                    fixedWidth : 60,
-                    fixedHeight: 44,
+                  375: {
+                    fixedWidth : 144,
+                    fixedHeight: 144,
+                  },
+                  576: {
+                    fixedWidth : 144,
+                    fixedHeight: 144,
                   },
                 },
      

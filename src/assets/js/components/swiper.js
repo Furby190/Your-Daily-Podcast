@@ -1,8 +1,9 @@
-  import Swiper from 'swiper';
-  import 'swiper/css';
+import Swiper, { Autoplay } from 'swiper';
 
+  import 'swiper/css';
   import 'swiper/css/navigation';
   import 'swiper/css/pagination';
+  Swiper.use([Autoplay]);
 
   const swiper = new Swiper(".swiper", {
     spaceBetween: 30,

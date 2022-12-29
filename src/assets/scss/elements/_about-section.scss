@@ -1,94 +1,109 @@
-#about {
-    height: 1400px;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    background-color: $pure-white;
-
-    h2 span {
-        display: block;  
-    }
-
-    .ideas-area {
-        position: absolute;
-        height: 30%;
-        padding: 5px 5%;
-        top: 25%;
-        display: grid;
-        grid-template-columns: auto auto;
-        
-        .idea {
-            margin: 0 2.5px;
-            padding: 10%;
-
-            img {
-                height: 60%;
-                width: 58%;
-            }
-            p {
-                margin-top: 6%;
-            }
+@media (min-width: 376px) {
+    #about {
+        height: 560px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        background-color: $pure-white;
+    
+        h2 {
+            width: 90%;
         }
-    }
-    .quote-area {
-        position: absolute;
-        height: 28%;
-        width: 80%;
-        top: 65%;
-        left: 50%;
-        background-color: $main-color;
-        transform: translate(-50%);
-
-        p {
-            margin-top: 12%;
-            font-family: 'Montserrat Alternates', sans-serif;
-            font-size: 36px;
-            font-weight: 700;
-            line-height: 130%;
-            span { 
-                display: block;
-            }
-        }
-
-        .quore-vectors {
-            img:nth-child(1) {
-                position: absolute;
-                top: -17%;
-                right: -4%;
-            }
-            img:nth-child(2) {
-                position: absolute;
-                top: 50%;
-                left: -6%;
-            }
-            img:nth-child(3) {
-                position: absolute;
-                top: 14%;
-                left: 50%;
-                transform: translate(-50%);
-            }
-        }
-        .quote-author {
-            margin-top: 5.5%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1%;
-
-            .author {
-                display: flex;
-                flex-direction: row;
-
+    
+        .ideas-area {
+            position: absolute;
+            height: 14%;
+            padding: 5px 5%;
+            top: 140px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            
+            .idea {
+                height: 90%;
+                margin: 0 2.5px;
+                padding: 2%;
+    
                 img {
-                    margin-right: 6%;
-                    border-radius: 50%;
+                    height: 53%;
+                    width: 90%;
                 }
-                .author-first-name {
-                    margin-top: 16%;
-                    font-size: 14px;
-                    font-weight: 400;  
-                } 
+                p {
+                    margin-top: 6%;
+                    font-size: 10px;
+                }
             }
-        }       
+        }
+        .quote-area {
+            position: absolute;
+            height: 23%;
+            width: 85%;
+            top: 342px;
+            left: 50%;
+            background-color: $main-color;
+            transform: translate(-50%, 0);
+    
+            p {
+                margin-top: 14%;
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-size: 13px;
+                font-weight: 700;
+                span { 
+                    display: block;
+                }
+            }
+    
+            .quore-vectors {
+                img:nth-child(1) {
+                    position: absolute;
+                    width: 20%;
+                    top: -20%;
+                    right: -9%;
+                }
+                img:nth-child(2) {
+                    position: absolute;
+                    width: 15%;
+                    top: 50%;
+                    left: -6%;
+                }
+                img:nth-child(3) {
+                    position: absolute;
+                    width: 5%;
+                    top: 14%;
+                    left: 50%;
+                    transform: translate(-50%);
+                }
+            }
+            .quote-author {
+                margin-top: 7%;
+                display: flex;
+                align-items: center;
+    
+                .author {
+                    position: relative;
+                    left: 26%;
+                    display: flex;
+                    flex-direction: row;
+    
+                    img {
+                        height: 25%;
+                        width: 25%;
+                        margin-right: 13%;
+                        border-radius: 50%;
+                    }
+                    .author-first-name {
+                        margin-top: 7%;
+                        font-size: 8px;
+                        font-weight: 400;  
+                    } 
+                }
+                .author-platform {
+                    position: relative;
+                    left: 4%;
+                    img {
+                        width: 50%;
+                    }
+                }
+            }       
+        }
     }
 }

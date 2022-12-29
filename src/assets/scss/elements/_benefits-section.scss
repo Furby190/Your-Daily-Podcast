@@ -1,47 +1,110 @@
-#benefits {
-    height: 1340px;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    background-color: $pure-white;
-    
-    .benefits-uniquely-scribble {
-        position: absolute; 
-        top: -2.5%;
-        right: 18%;
-    }
-    .benefits-container {
-        position: absolute;
-        height: 55%;
-        width: 100%;   
-        padding: 2%;
-        top: 24%;
-        left: 50%;
-        display: grid;
-        grid-template-columns: repeat(3, 4fr);
-        transform: translate(-50%, 0);
-        gap: 1em;
-       
-        .benefit-card {
+@media (min-width: 376px) {
+    #benefits {
+        height: 710px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        background-color: $pure-white;
+        
+        .benefits-uniquely-scribble {
+            position: absolute; 
+            width: 22%;
+            top: .6%;
+            right: 23%;
+        }
+        .benefits-container {
+            position: absolute;
+            height: 35%;
+            width: 100%;   
+            padding: 2%;
+            top: 180px;
+            left: 50%;
             display: grid;
-            grid-template-rows: 50% 15% 35%;
-            text-align: center;
-            transition: box-shadow .5s, transform .5s;
-            border-bottom-right-radius: 8px;
-            
-            .benefit-card-photo {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }   
+            grid-template-columns: repeat(2, 6fr);
+            transform: translate(-50%, 0);
+            gap: 1em;
+           
+            .benefit-card {
+                display: grid;
+                grid-template-rows: 50% 15% 35%;
+                text-align: center;
+                transition: box-shadow .5s, transform .5s;
+                border-bottom-right-radius: 8px;
+                
+                .benefit-card-photo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }  
+                .benefit-title {
+                    padding-top: 13%;
+                    font-size: 11px;
+                }
+                .benefit-text {
+                    display: none;
+                } 
+            }
+            .benefit-card:hover {
+                box-shadow: 3px 3px $shadow-blue;
+                transform: scale(1.01);
+            }
         }
-        .benefit-card:hover {
-            box-shadow: 5px 5px $shadow-blue;
-            transform: scale(1.01);
+        .benefits-btn {
+            height: 4.5em;
+            top: 87.5%;
         }
     }
-    .benefits-btn {
-        height: 4.5em;
-        top: 87.5%;
+}
+
+
+
+
+@media (min-width: 1200px) {
+    #benefits {
+        height: 1340px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        background-color: $pure-white;
+        
+        .benefits-uniquely-scribble {
+            position: absolute; 
+            top: -2.5%;
+            right: 18%;
+        }
+        .benefits-container {
+            position: absolute;
+            height: 55%;
+            width: 100%;   
+            padding: 2%;
+            top: 24%;
+            left: 50%;
+            display: grid;
+            grid-template-columns: repeat(3, 4fr);
+            transform: translate(-50%, 0);
+            gap: 1em;
+           
+            .benefit-card {
+                display: grid;
+                grid-template-rows: 50% 15% 35%;
+                text-align: center;
+                transition: box-shadow .5s, transform .5s;
+                border-bottom-right-radius: 8px;
+                
+                .benefit-card-photo {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }   
+            }
+            .benefit-card:hover {
+                box-shadow: 5px 5px $shadow-blue;
+                transform: scale(1.01);
+            }
+        }
+        .benefits-btn {
+            height: 4.5em;
+            top: 87.5%;
+        }
     }
 }

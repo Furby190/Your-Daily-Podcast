@@ -1,31 +1,30 @@
-@mixin user-element-style {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-}
-
-@mixin line-shared-style {
-    height: 1%;
-    background-color: $dark-gray;
-}
-
-@mixin section-title-special {
-    position: absolute;
-    left: 50%;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 59px;
-    color: $pure-black;
-    transform: translate(-50%);
-    letter-spacing: -0.02em;
-    // without specified top
-}
-
-@mixin text-under-section-title-special {
-    position: absolute;
-    left: 50%;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 22px;
-    color: $dark-gray;
-    transform: translate(-50%);
-    // without specified top 
-}
+    @mixin user-element-style {
+        position: absolute;
+        transform: translate(0, -50%);
+    }
+    
+    @mixin line-shared-style {
+        height: 1%;
+        background-color: $dark-gray;
+    }
+    
+    @mixin section-title-special {
+        position: absolute;
+        left: 50%;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 59px;
+        color: $pure-black;
+        transform: translate(-50%);
+        letter-spacing: -0.02em;
+        // without specified top
+    }
+    
+    @mixin text-under-section-title-special {
+        position: absolute;
+        left: 50%;
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 22px;
+        color: $dark-gray;
+        transform: translate(-50%);
+        // without specified top 
+    }
