@@ -1,87 +1,200 @@
-#app-advertisement {
-    height: 900px;
-    width: 100vw;
-    background-color: $alice-blue;
+@media (min-width: 376px) {
+    #app-advertisement {
+        height: 550px;
+        width: 100vw;
+        background-color: $alice-blue;
+    
+        .sparkles-container {
 
-    // img:nth-of-type(1) {
-    //     position: absolute;
-    //     top: 200px;
-    // }
-    // img:nth-of-type(2) {
-    //     position: absolute;
-    //     top: 200px;
-    // }
-    // img:nth-of-type(3) {
-    //     position: absolute;
-    //     top: 200px;
-    // }
-    // img:nth-of-type(4) {
-    //     position: absolute;
-    //     top: 200px;
-    // }
+            img:nth-of-type(1) {
+                position: absolute;
+                top: -1%;
+                left: 4%;
+                width: 30%;
+                @include animation-add-rotate-rigth;
+            }
+            img:nth-of-type(2) {
+                position: absolute;
+                top: 34%;
+                right: -1%;
+                @include animation-add-rotate-rigth;
+            }
 
-    .title-special-guest {
-        position: relative;
-        top: 7.3%;
-        display: inline;
-        padding: .3%;
-        font-weight: 700;
-        color: $title-red;
-        background-color: transparent;
-        border: 1px solid $title-red;
-        border-radius: 6px;
-    }
-    .app-section-title {
-        @include section-title-special;
-        top: 19%;
-        span {
-            display: block;
+            img:nth-of-type(3) {
+                position: absolute;
+                top: 59%;
+                left: 24%;
+                @include animation-add-rotate-rigth;
+            }
         }
-    }
-    .app-text-under-section-title {
-        @include text-under-section-title-special;
-        top: 37%;
-    }
-    .app-btn {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-    .app-platforms {
-        p {
-            position: absolute;
-            top: 71%;
-            left: 50%;
-            font-family: 'Montserrat Alternates', sans-serif;
-            font-size: 18px;
-            color: $dark-gray;
-            transform: translate(-50%);
-        }
-        div {
-            padding: .8% 3%;
-            position: absolute;
-            top: 73%;
-            left: 50%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+        .title-special-guest {
+            position: relative;
+            top: 9%;
+            display: inline;
+            padding: .5%;
+            font-weight: 700;
+            color: $title-red;
             background-color: transparent;
-            transform: translate(-50%);
-            
-            button {
-                margin-right: 13%;
-                padding: 9%;
+            border: 1px solid $title-red;
+            border-radius: 6px;
+            font-size: 11px;
+        }
+        .app-section-title {
+            @include section-title-special;
+            top: 17%;
+            font-size: 35px;
+            span {
+                display: block;
+            }
+        }
+        .app-text-under-section-title {
+            @include text-under-section-title-special;
+            top: 50%;
+            font-size: 14px;
+        }
+        .app-btn {
+            position: absolute;
+            padding: 5%;
+            top: 65%;
+            left: 50%;
+            font-size: 11px;
+            transform: translate(-50%, 0);
+        }
+        .app-platforms {
+            p {
+                position: absolute;
+                top: 85%;
+                left: 50%;
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-size: 14px;
+                color: $dark-gray;
+                transform: translate(-50%);
+            }
+            div {
+                padding: .8% 3%;
+                position: absolute;
+                top: 88%;
+                left: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
                 background-color: transparent;
-                border: none;
-                cursor: pointer;
-                transition: transform .5s;   
+                transform: translate(-50%);
+                
+                button {
+                    margin-right: 13%;
+                    padding: 9%;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    transition: transform .5s; 
+
+                    img {
+                        height: 20px;
+                    }
+                }
+                button:nth-of-type(3) {
+                    margin-right: 0px;
+                }
+                button:hover {
+                    transform: scale(1.05);
+                }
             }
-            button:nth-of-type(3) {
-                margin-right: 0px;
+        }
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    #app-advertisement {
+        height: 900px;
+        width: 100vw;
+        background-color: $alice-blue;
+    
+        // img:nth-of-type(1) {
+        //     position: absolute;
+        //     top: 200px;
+        // }
+        // img:nth-of-type(2) {
+        //     position: absolute;
+        //     top: 200px;
+        // }
+        // img:nth-of-type(3) {
+        //     position: absolute;
+        //     top: 200px;
+        // }
+        // img:nth-of-type(4) {
+        //     position: absolute;
+        //     top: 200px;
+        // }
+    
+        .title-special-guest {
+            position: relative;
+            top: 6%;
+            display: inline;
+            padding: .5%;
+            font-weight: 700;
+            color: $title-red;
+            background-color: transparent;
+            border: 1px solid $title-red;
+            border-radius: 6px;
+            font-size: 11px;
+        }
+        .app-section-title {
+            @include section-title-special;
+            top: 12%;
+            font-size: 35px;
+            span {
+                display: block;
             }
-            button:hover {
-                transform: scale(1.05);
+        }
+        .app-text-under-section-title {
+            @include text-under-section-title-special;
+            top: 32.5%;
+            font-size: 14px;
+        }
+        .app-btn {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+        .app-platforms {
+            p {
+                position: absolute;
+                top: 71%;
+                left: 50%;
+                font-family: 'Montserrat Alternates', sans-serif;
+                font-size: 18px;
+                color: $dark-gray;
+                transform: translate(-50%);
+            }
+            div {
+                padding: .8% 3%;
+                position: absolute;
+                top: 73%;
+                left: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                background-color: transparent;
+                transform: translate(-50%);
+                
+                button {
+                    margin-right: 13%;
+                    padding: 9%;
+                    background-color: transparent;
+                    border: none;
+                    cursor: pointer;
+                    transition: transform .5s;   
+                }
+                button:nth-of-type(3) {
+                    margin-right: 0px;
+                }
+                button:hover {
+                    transform: scale(1.05);
+                }
             }
         }
     }

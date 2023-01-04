@@ -25,6 +25,50 @@
     }
 }
 
+@keyframes rotate-right {
+    from {
+        transform: rotate(0);
+    }
+    
+    to {
+        transform: rotate(360deg);
+    }
+}
 
+@keyframes tremble-movment {
+    0% {
+        transform: scale(1.05);
+    }
+    10% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.05);
+    }
+    30% {
+        transform: scale(1);
+    }
+    40% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(1);
+    }
+    80% {
+        transform: scale(1.05);
+    }
+    90% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
 
 

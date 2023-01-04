@@ -4,11 +4,14 @@
         width: 100vw;
         background-color: $alice-blue;
         
-        img:nth-of-type(2) {
-            position: absolute;
-            width: 10%;
-            top: 7%;
-            left: 16%;
+        .user-opinions-vectors {
+            .user-opinion-sparkle {
+                position: absolute;
+                width: 10%;
+                top: 7%;
+                left: 16%;
+                @include animation-add-rotate-rigth;
+            }
         }
         .opinions-container {
             height: 45%;

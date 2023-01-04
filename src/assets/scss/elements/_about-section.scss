@@ -58,6 +58,8 @@
                     width: 20%;
                     top: -20%;
                     right: -9%;
+                    @include animation-add-rotate-rigth;
+                    animation-duration: 50s;
                 }
                 img:nth-child(2) {
                     position: absolute;

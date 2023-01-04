@@ -1,69 +1,76 @@
 @media (min-width: 376px) {
     #news-section {
-        height: 1300px;
+        height: 1050px;
         width: 100vw;
         background-color: $pure-white;
         z-index: 1;
         
+        .text-under-section-title {
+            top: 96px;
+        }
         .news-black-star {
-            position: absolute;
-            margin-top: 200px;
-            top: 3.2%;
-            left: 3%;
-            z-index: 2;
+            display: none;
         }
         .news-black-swirl {
             position: absolute;
-            top: 72%;
-            right: 4%;
+            top: 89%;
+            right: 8%;
+            width: 24%;
         }
         .news-container {
             position: absolute;
             height: 670px;
-            width: 81%;
-            top: 26%;
-            left: 50%;
+            width: 90.5%;
+            top: 150px;
             z-index: 5;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            transform: translate(-50%, 0);
-            background-color: white;
+            flex-direction: column;
             
-            .news-card:nth-of-type(1) {
-                border-top-left-radius: 0px;
-            }
             .news-card {
-                width: 570px;
+                width: 340px;
                 padding: 1%;
                 display: grid;
-                grid-template-rows: 54% 46%;
+                grid-template-rows: 56% 44%;
                 border: 2px solid $pure-black;
                 border-radius: 9px;
-    
+                
+                .news-card-image {
+                    margin-bottom: 6%;
+                    img {
+                        height: 180px;
+                        width: 330px;
+                    }
+                }  
                 .news-card-info {
                     display: grid;
-                    grid-template-rows: 35% 35% 10% 20%;
+                    grid-template-rows: 25% 45% 1% 29%;
                     text-align: left;
-    
+                    
                     .news-card-title {
-                        margin-top: 1%;
                         p {
                             margin-bottom: 1%;
                             color:$dark-gray;
+                            font-size: 12px;
                             text-transform: uppercase;
                         }
                         h2 {
-                            font-size: 36px;
+                            font-size: 20px;
+                        }
+                    }
+                    .news-card-text {
+                        p {
+                            margin-top: 2%;
+                            font-size: 12px;  
                         }
                     }
                     .news-card-line {
-                        margin-top: 2.2%;
                         @include line-shared-style;
+                        height: 1px;
+                        margin-top: 2%;
                     }
                     .news-card-tags-date {
                         position: relative;
-                        margin-top: 5%;
+                        margin-top: 2%;
                         display: grid;
                         grid-template-columns: 70% 30%;
     
@@ -71,9 +78,9 @@
                             display: flex;
                             justify-content:left;
                             align-items:flex-end;
-    
                             img {
                                 margin-right: 3%;
+                                scale: .8;
                                 transition: transform .5s;
                             }
                             img:hover {
@@ -81,22 +88,25 @@
                             }
                         }
                         .news-card-date {
+                            margin-bottom: 7%; 
                             display: flex;
                             justify-content: right;
-                            align-items: flex-end;  
+                            align-items: flex-end; 
+                            font-size: 13px;
+                            color: $dark-gray;
                         }  
                     }
                 }
             }
             .news-card:nth-of-type(1) {
+                margin-bottom: 7%;
                 box-shadow: 10px 10px black;
             }
         }
         .news-btn {
-            top: 88%;
+            top: 92%;
         }
-    }
-    
+    } 
 }
 
 
