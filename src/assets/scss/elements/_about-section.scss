@@ -9,12 +9,10 @@
         h2 {
             width: 90%;
         }
-    
         .ideas-area {
             position: absolute;
-            height: 14%;
-            padding: 5px 5%;
-            top: 140px;
+            padding: 2% 5%;
+            top: 150px;
             display: grid;
             grid-template-columns: 50% 50%;
             
@@ -24,12 +22,12 @@
                 padding: 2%;
     
                 img {
-                    height: 53%;
-                    width: 90%;
+                    height: 60%;
+                    width: 60%;
                 }
                 p {
                     margin-top: 6%;
-                    font-size: 10px;
+                    font-size: 8px;
                 }
             }
         }
@@ -51,7 +49,6 @@
                     display: block;
                 }
             }
-    
             .quore-vectors {
                 img:nth-child(1) {
                     position: absolute;
@@ -76,7 +73,7 @@
                 }
             }
             .quote-author {
-                margin-top: 7%;
+                margin-top: 5%;
                 display: flex;
                 align-items: center;
     
@@ -89,7 +86,7 @@
                     img {
                         height: 25%;
                         width: 25%;
-                        margin-right: 13%;
+                        margin-right: 11%;
                         border-radius: 50%;
                     }
                     .author-first-name {
@@ -100,7 +97,9 @@
                 }
                 .author-platform {
                     position: relative;
-                    left: 4%;
+                    display: flex;
+                    justify-content: left;
+                    left: 24%;
                     img {
                         width: 50%;
                     }
@@ -109,3 +108,377 @@
         }
     }
 }
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 440px) {
+    #about {
+        .ideas-area {
+            .idea {
+                img {
+                    width: 64%;
+                }
+            }
+        }
+        .quote-area {
+            p {
+                margin-top: 13%;
+            }
+            .quote-author {
+                margin-top: 3%;
+                .author {
+                    left: 27%; 
+                }
+                .author-platform {
+                    left: 24%;
+                }
+            }
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 480px) {
+    #about { 
+        .quote-area {
+            top: 359px;
+            p {
+                margin-top: 12.5%;
+            }
+            .quote-author {
+                margin-top: 3%;
+                .author {
+                    left: 29.5%; 
+                }
+                .author-platform {
+                    left: 26.5%;
+                }
+            }
+        } 
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 520px) {
+    #about { 
+        .quote-area {
+            p {
+                margin-top: 11%;
+            }
+            .quote-author {
+                margin-top: 3%;
+                .author {
+                    left: 31.5%; 
+                }
+                .author-platform {
+                    left: 29%;
+                }
+            }
+        } 
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 576px) {
+    #about {
+        height: 640px;
+        .ideas-area {
+            top: 180px;
+            .idea {
+                img {
+                    width: 60%;
+                }
+                p {
+                    font-size: 11px;
+                }
+            }
+        }
+        .quote-area {
+            top: 410px;
+            p {
+                margin-top: 12%;
+            }
+            .quore-vectors {
+                img:nth-child(1) {
+                    width: 14%;
+                    left: 93%;
+                }
+                img:nth-child(2) {
+                    top: 40%;
+                }
+            }
+            .quote-author {
+                margin-top: 3%;
+                .author {
+                    left: 33%;
+                }
+                .author-platform {
+                    left: 30.5%;
+                }
+            }
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 650px) {
+    #about {
+        height: 660px;
+        .quote-area {
+            top: 430px;
+            .quote-author {
+                .author {
+                    left: 34.5%;
+                }
+                .author-platform {
+                    left: 32%;
+                }
+            }
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 700px) {
+    #about {
+        .quote-area {
+            top: 440px;
+            p {
+                margin-top: 11%;
+            }
+            .quote-author {
+                .author {
+                    left: 36%;
+                }
+                .author-platform {
+                    left: 34%;
+                }
+            }
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 786px) {
+    #about {
+        height: 730px;
+        .ideas-area {
+            .idea {
+                img {
+                    width: 56%;
+                }
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+        .quote-area {
+            top: 480px;
+            p {
+                margin-top: 11.5%;
+                font-size: 15px;
+            }
+            .quore-vectors {
+                img:nth-child(1) {
+                    width: 14%;
+                    left: 93%;
+                }
+                img:nth-child(2) {
+                    top: 30%;
+                }
+            }
+            .quote-author {
+                .author {
+                    left: 37%;
+                }
+                .author-platform {
+                    left: 35%;
+                }
+            }
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 850px) {
+    #about {
+        .quote-area {
+            p {
+                margin-top: 10%;
+            }
+            .quote-author {
+                .author {
+                    left: 38.5%;
+                }
+                .author-platform {
+                    left: 36.5%;
+                }
+            }
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 900px) {
+    #about {
+        height: 750px;
+        .quote-area {
+            top: 500px;
+            p {
+                margin-top: 10%;
+            }
+            .quore-vectors {
+                img:nth-child(2) {
+                    width: 12%;
+                }
+            }
+            .quote-author {
+                margin-top: 2.5%;
+                .author {
+                    left: 39.5%;
+                }
+                .author-platform {
+                    left: 37.5%;
+                }
+            }
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 992px) {
+    #about {
+        height: 910px;
+        .ideas-area {
+            top: 230px;
+            .idea {
+                img {
+                    width: 60%;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        .quote-area {
+            top: 590px;
+            p {
+                margin-top: 9.5%;
+                font-size: 24px;
+            }
+            .quore-vectors {
+                img:nth-child(1) {
+                    width: 12%;
+                    left: 94%;
+                }
+                img:nth-child(3) {
+                    width: 3.5%;
+                }
+            }
+            .quote-author {
+                margin-top: 2%;
+                .author {
+                    left: 34%;
+                    img {
+                        width: 40%;
+                        margin-right: 24%;
+                    }
+                    .author-first-name {
+                        margin-top: 13%;
+                        font-size: 12px; 
+                    } 
+                }
+                .author-platform {
+                    left: 38%;
+                    img {
+                        margin-top: 2%;
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1200px) {
+    #about {
+        height: 1150px;
+        .ideas-area {
+            top: 350px;
+            .idea {
+                img {
+                    width: 50%;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+       .quote-area {
+            top: 760px;
+            .quote-author {
+                .author {
+                    left: 35%;
+                    img {
+                        width: 50%;
+                    }
+                    .author-first-name {
+                        margin-top: 15%;
+                        font-size: 14px; 
+                    } 
+                }
+                .author-platform {
+                    left: 38.5%;
+                    img {
+                        margin-top: 1%;
+                        width: 79%;
+                    }
+                }
+            }       
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1400px) {
+    #about {
+        height: 1350px;
+        .ideas-area {
+            top: 350px;
+            .idea {
+                img {
+                    width: 50%;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+       .quote-area {
+            height: 26%;
+            top: 850px;
+            p {
+                font-size: 36px;
+            }
+            .quote-author {
+                .author {
+                    left: 36%;
+                    img {
+                        width: 60%;
+                    }
+                    .author-first-name {
+                        margin-top: 22%;
+                        font-size: 14px; 
+                    } 
+                }
+                .author-platform {
+                    left: 40%;
+                    img {
+                        width: 82%;
+                    }
+                }
+            }       
+        }
+    }
+}
+

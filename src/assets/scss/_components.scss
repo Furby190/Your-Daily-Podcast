@@ -4,7 +4,6 @@
         padding: 5%;
         text-align: center;
     }
-    
     .darker-btn {
         padding: 2% 5%;
         font-family: 'Montserrat Alternates', sans-serif;
@@ -17,7 +16,6 @@
         text-transform: uppercase;
         box-shadow: 6px 6px 0px $shadow-darker-btn;
     }
-    
     .card-platforms {
         position: absolute;
         top: 3%;
@@ -27,12 +25,10 @@
             width: 1em;
         }
     }
-    
     .splide {
         margin-top: 10%;
         padding: 13%;
     }
-    
     .splide__slide {
         opacity: 0.6;
     
@@ -41,6 +37,12 @@
                 height: 140px;
                 width: 140px;  
             } 
+            .card-title {
+                position: relative;
+                top: -25px;
+                font-size: 14px;
+                color: $shadow-blue;
+            }
             .vectors-first, .vectors-second, .vectors-third, .vectors-fourth, .vectors-fifth {
                 display: none;
             }
@@ -55,11 +57,9 @@
             }
         }
     }
-     
     .splide__slide.is-active {
         opacity: 1;
     }
-    
     .scribble {
         height: 70px;
         width: 70px ;
@@ -69,7 +69,6 @@
         transform: translate(-50%,0);
         z-index: 1;
     }
-    
     .section-title {
         position: absolute;
         top: 60px;
@@ -80,7 +79,6 @@
         transform: translate(-50%);
         letter-spacing: -0.02em;
     }
-    
     .text-under-section-title {
         position: absolute;
         display: block;
@@ -91,61 +89,130 @@
         color: $dark-gray;
         transform: translate(-50%);
     }
-    
     .episode-card-shadow {
         box-shadow: 10px 10px $shadow-blue;
     }
-    
     .red-title {
         font-size: 13px;
         color: $title-red;
     }
 }
+// --------------------------------------------------------------------------------------
 
+@media (min-width: 500px) {
+    .scribble {
+        height: 85px;
+        width: 80px;
+        top: -44px;
+    }
+    .section-title {
+        top: 80px;
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 576px) {
+    .splide {
+        margin-top: 6%;
+        padding: 11%;
+    }
+    .splide__slide {
+        .card {
+            img {
+                height: 193px;
+                width: 187px;  
+            } 
+            .card-title {
+                top: -30px;
+                font-size: 16px;
+            }
+            .card-platforms {
+                right: -6%;
+            }
+        }
+    }
+    .section-title {
+        font-size: 33px;
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 786px) {
+    .scribble {
+        height: 90px;
+        width: 85px;
+        top: -46px;
+    }
+    .splide {
+        margin-top: 10%;
+        padding: 8%;
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 992px) {
+    .darker-btn {
+        font-size: 1em;
+        border-radius: 8px;
+    }
+    .splide {
+        padding: 7%;
+    }
+    .splide__slide {
+        .card {
+            img {
+                height: 215px;
+                width: 215px;  
+            } 
+            .card-title {
+                top: -30px;
+                font-size: 16px;
+            }
+            .card-platforms {
+                right: -6%;
+            }
+        }
+    }
+    .scribble {
+        height: 105px;
+        width: 93px;
+        top: -53px;
+    }
+    .section-title {
+        font-size: 46px;
+    }
+}
+// --------------------------------------------------------------------------------------
 
 @media (min-width: 1200px) {
-    .section {
-        position: relative;
-        padding: 5%;
-        text-align: center;
-    }
-    
-    .darker-btn {
-        padding: 2% 5%;
-        font-family: 'Montserrat Alternates', sans-serif;
-        font-size: 1em;
-        background-color: $pure-black;
-        color: $pure-white;
-        cursor: pointer;
-        border: none;
-        border-radius: 8px;
-        text-transform: uppercase;
-        box-shadow: 6px 6px 0px $shadow-darker-btn;
-    }
-    
     .card-platforms {
+        position: absolute;
+        top: 3%;
         img {
             height: 1em ;
             width: 1em ;
         }
-        position: absolute;
-        top: 3%;
     }
-    
+    .scribble {
+        height: 125px;
+        width: 96px;
+        top: -64px;
+    }
     .splide {
-        margin-top: 10%;
-        padding: 4%;
+        padding: 6%;
     }
-    
     .splide__slide {
-        opacity: 0.6;
-    
         .card {
             img {
                 height: 375px;
                 width: 375px;  
             } 
+            .card-title {
+                top: -54px;
+                font-size: 36px;
+            }
             .vectors-first {
+                display: block;
                 img {
                     height: 210%;
                     width: 210%;
@@ -155,6 +222,7 @@
                 left: 15%;
             }
             .vectors-second {
+                display: block;
                 img {
                     height: 99%;
                     width: 99%;
@@ -164,6 +232,7 @@
                 right: 17%;
             }
             .vectors-third {
+                display: block;
                 img {
                     height: 99%;
                     width: 99%;
@@ -173,6 +242,7 @@
                 left: 29%;
             }
             .vectors-fourth {
+                display: block;
                 img {
                     height: 96%;
                     width: 96%;
@@ -181,6 +251,7 @@
                 top: 2%;
             }
             .vectors-fifth {
+                display: block;
                 img {
                     height: 200%;
                     width: 200%;
@@ -200,18 +271,6 @@
             }
         }
     }
-     
-    .splide__slide.is-active {
-        opacity: 1;
-    }
-    
-    .scribble {
-        position: absolute;
-        top: -76px;
-        left: 50%;
-        z-index: 1;
-    }
-    
     .section-title {
         position: absolute;
         top: 140px;
@@ -222,22 +281,26 @@
         transform: translate(-50%);
         letter-spacing: -0.02em;
     }
+    // .scribble {
+    //     height: 160px;
+    //     top: -82px;
+    // }
+    // .section-title {
+    //     position: absolute;
+    //     top: 140px;
+    //     left: 50%;
+    //     font-family: 'Montserrat Alternates', sans-serif;
+    //     font-size: 59px;
+    //     color: $pure-black;
+    //     transform: translate(-50%);
+    //     letter-spacing: -0.02em;
+    // }
     
-    .text-under-section-title {
-        position: absolute;
-        top: 226px;
-        left: 50%;
-        font-family: 'Montserrat Alternates', sans-serif;
-        font-size: 22px;
-        color: $dark-gray;
-        transform: translate(-50%);
-    }
+    // .episode-card-shadow {
+    //     box-shadow: 10px 10px $shadow-blue;
+    // }
     
-    .episode-card-shadow {
-        box-shadow: 10px 10px $shadow-blue;
-    }
-    
-    .red-title {
-        color: $title-red;
-    }
+    // .red-title {
+    //     color: $title-red;
+    // }
 }
