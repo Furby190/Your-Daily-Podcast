@@ -1,26 +1,20 @@
 @media (min-width: 376px) {
     #episodes {
+        position: relative;
         height: 1460px;
         width: 100vw;
         background-color: $main-color;
     
-        .text-under-section-title {
-            top: 96px;
-        }
-        .episodes-btn {
-            top: 32.5%;
-        }
         .episodes-sparkle {
             position: absolute;
             width: 13%;
-            top: 8.2%;
+            top: 7.6%;
             left: 89.5%;
         }
         .episodes-container {
             position: relative;
-            height: 62.4%;
             width: 92%;
-            top: 10%;
+            top: 9%;
             left: 50%;
             display: grid;
             grid-template-columns: auto;
@@ -34,7 +28,6 @@
                 margin-bottom: 5%;
                 padding: 3%;
                 display: grid;
-                grid-template-columns: auto;
                 grid-template-rows: 84% 16%;
                 background-color: $pure-white;
                 border: 1px solid black;
@@ -52,7 +45,6 @@
                     }
                     .card-cover-items {
                         display: grid;
-                        grid-template-columns: auto;
                         grid-template-rows: 47.5% 5% 47.5%;
     
                         .card-cover-title {
@@ -94,14 +86,14 @@
                     grid-template-columns: 65% 35%;
       
                     .host-authors {
-                        margin-bottom: 10%;
+                        margin-bottom: 13%;
                         display: flex;
                         justify-content: right;
                         align-items: center;
                         flex-direction: row;
                         font-size: 9.5px;
                         img { 
-                            margin-left: 3%;
+                            margin-left: 5px;
                         }
                     }
                     .tags {
@@ -124,117 +116,551 @@
                 }
             }
         }
+        .episodes-btn {
+            bottom: -160px;
+        }
+        .text-under-section-title {
+            top: 95px;
+        }
     }    
 }
+// --------------------------------------------------------------------------------------
 
-
-
-
-
-
-@media (min-width: 1200px) {
+@media (min-width: 430px) {
     #episodes {
-        position: relative;
-        height: 1460px;
-        width: 100vw;
-        background-color: $main-color;
-    
-        .episodes-btn {
-            top: 26.4%;
-        }
         .episodes-sparkle {
-            position: absolute;
-            top: 11%;
-            left: 84%;
+            left: 86%;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 500px) {
+    #episodes {
+        height: 1490px;
+
+        .episodes-sparkle {
+            left: 80%;
+        }
+        .episodes-btn {
+            bottom: -170px;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 576px) {
+    #episodes {
+        height: 1970px;
+
+        .episodes-sparkle {
+            left: 88%;
         }
         .episodes-container {
-            position: relative;
-            height: 62.4%;
-            width: 92%;
-            top: 20%;
-            left: 50%;
-            display: grid;
-            grid-template-columns: auto auto;
-            justify-content:space-around;
-            transform: translate(-50%, 0);
-    
             .episode-card {
-                position: relative;
-                height: 249px;
-                width: 570;
-                padding: 2%;
-                display: grid;
-                grid-template-columns: auto;
-                grid-template-rows: 84% 16%;
-                background-color: $pure-white;
-                border: 1px solid black;
-                border-radius: 9px;
-                
+                height: 250px;
+                width: 490px;
+
                 .card-cover {
-                    display: grid;
-                    grid-template-columns: 30% 60%;
-    
-                    .card-cover-image {
-                        img {
-                            border-radius: 10px;
-                        }
-                    }
                     .card-cover-items {
                         display: grid;
-                        grid-template-columns: auto;
-                        grid-template-rows: 47.5% 5% 47.5%;
-    
+                        grid-template-rows: 53.5% 1% 45.5%;
+
                         .card-cover-title {
                             height: 70%;
                             width: 110%;
-                            margin: 5% 0 10% 5.5%;
+                            margin: 8% 0 10% 19%;
                             text-align: left;
                             p {
-                                margin-bottom: 1.5%;
-                                font-weight: 700;
-                                color: $title-red;
+                                margin-bottom: 3%;
+                                font-size: 12.5px;
+                            }
+                            h3 {
+                                font-size: 16px;
                             }
                         }
                         .card-cover-text {
-                            width: 110%;
-                            margin-left: 5.5%;
-                            padding-top: 3%;
-                            text-align: left;
-                            color: $dark-gray;
-                        }
-                        .card-cover-line {
-                            @include line-shared-style;
-                            width: 110%;                
-                            margin-left: 5.5%; 
+                            width: 95%;
+                            padding-top: 9%;
+                            margin-left: 19%;
+                            font-size: 12px
                         }
                     }
                 }
                 .card-info {
-                    display: grid;
-                    grid-template-columns: 65% 35%;
-      
                     .host-authors {
-                        display: flex;
-                        justify-content: right;
-                        align-items: center;
-                        flex-direction: row;
+                        margin-top: 7px;
+                        margin-bottom: 12px;
+                        font-size: 10.5px;
+
                         img { 
+                            scale: .9;
                             margin-left: 3%;
                         }
                     }
                     .tags {
-                        display: flex;
-                        justify-content: left;
+                        top: 7px;
+                        left: -5px;
+
                         img {
-                            margin-right: 2%;
-                            transition: transform .5s;
-                        }
-                        img:hover {
-                            transform: scale(1.05);
+                            scale: .9;
                         }
                     }
                 }
             }
         }
+        .episodes-btn {
+            bottom: -185px;
+        }
+        .text-under-section-title {
+            top: 110px;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 620px) {
+    #episodes {
+        .episodes-sparkle {
+            left: 85%;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 680px) {
+    #episodes {
+        height: 1980px;
+
+        .episodes-sparkle {
+            left: 82%;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 730px) {
+    #episodes {
+        .episodes-sparkle {
+            top: 7%;
+            left: 79.5%;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 786px) {
+    #episodes {
+        height: 2000px;
+
+        .episodes-sparkle {
+            top: 6%;
+            left: 77%;
+        }
+        .episodes-container {
+            top: 8%;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 840px) {
+    #episodes {
+        .episodes-sparkle {
+            left: 75%;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 890px) {
+    #episodes {
+        .episodes-sparkle {
+            left: 73%;
+        }
+        .episodes-btn {
+            bottom: -175px;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 940px) {
+    #episodes {
+        .episodes-sparkle {
+            left: 71.5%;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 992px) {
+    #episodes {
+        height: 2200px;
+
+        .episodes-sparkle {
+            top: 8.5%;
+            left: 71%;
+        }
+        .episodes-container {
+            top: 11%;
+        }
+        .episodes-btn {
+            bottom: -300px;
+        }
+        .text-under-section-title {
+            top: 150px;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1060px) {
+    #episodes {
+        // height: 2200px;
+
+        .episodes-sparkle {
+            // top: 8.5%;
+            left: 69%;
+        }
+        // .episodes-container {
+        //     top: 11%;
+        //     // .episode-card {
+        //     //     // height: 250px;
+        //     //     // width: 490px;
+
+        //     //     .card-cover {
+        //     //         .card-cover-items {
+        //     //             // display: grid;
+        //     //             // grid-template-rows: 53.5% 1% 45.5%;
+
+        //     //             .card-cover-title {
+        //     //                 // height: 70%;
+        //     //                 // width: 110%;
+        //     //                 // margin: 8% 0 10% 19%;
+        //     //                 // text-align: left;
+        //     //                 // p {
+        //     //                 //     margin-bottom: 3%;
+        //     //                 //     font-size: 12.5px;
+        //     //                 // }
+        //     //                 // h3 {
+        //     //                 //     font-size: 16px;
+        //     //                 // }
+        //     //             }
+        //     //             // .card-cover-text {
+        //     //             //     width: 95%;
+        //     //             //     padding-top: 9%;
+        //     //             //     margin-left: 19%;
+        //     //             //     font-size: 12px
+        //     //             // }
+        //     //         }
+        //     //     }
+        //     //     .card-info {
+        //     //         .host-authors {
+        //     //             // margin-top: 7px;
+        //     //             // margin-bottom: 12px;
+        //     //             // font-size: 10.5px;
+
+        //     //             // img { 
+        //     //             //     scale: .9;
+        //     //             //     margin-left: 3%;
+        //     //             // }
+        //     //         }
+        //     //         .tags {
+        //     //             // top: 7px;
+        //     //             // left: -5px;
+
+        //     //             // img {
+        //     //             //     scale: .9;
+        //     //             // }
+        //     //         }
+        //     //     }
+        //     // }
+        // }
+        // .episodes-btn {
+        //     bottom: -300px;
+        // }
+        // .text-under-section-title {
+        //     top: 150px;
+        // }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1140px) {
+    #episodes {
+        // height: 2200px;
+
+        .episodes-sparkle {
+            // top: 8.5%;
+            left: 67%;
+        }
+        // .episodes-container {
+        //     top: 11%;
+        //     // .episode-card {
+        //     //     // height: 250px;
+        //     //     // width: 490px;
+
+        //     //     .card-cover {
+        //     //         .card-cover-items {
+        //     //             // display: grid;
+        //     //             // grid-template-rows: 53.5% 1% 45.5%;
+
+        //     //             .card-cover-title {
+        //     //                 // height: 70%;
+        //     //                 // width: 110%;
+        //     //                 // margin: 8% 0 10% 19%;
+        //     //                 // text-align: left;
+        //     //                 // p {
+        //     //                 //     margin-bottom: 3%;
+        //     //                 //     font-size: 12.5px;
+        //     //                 // }
+        //     //                 // h3 {
+        //     //                 //     font-size: 16px;
+        //     //                 // }
+        //     //             }
+        //     //             // .card-cover-text {
+        //     //             //     width: 95%;
+        //     //             //     padding-top: 9%;
+        //     //             //     margin-left: 19%;
+        //     //             //     font-size: 12px
+        //     //             // }
+        //     //         }
+        //     //     }
+        //     //     .card-info {
+        //     //         .host-authors {
+        //     //             // margin-top: 7px;
+        //     //             // margin-bottom: 12px;
+        //     //             // font-size: 10.5px;
+
+        //     //             // img { 
+        //     //             //     scale: .9;
+        //     //             //     margin-left: 3%;
+        //     //             // }
+        //     //         }
+        //     //         .tags {
+        //     //             // top: 7px;
+        //     //             // left: -5px;
+
+        //     //             // img {
+        //     //             //     scale: .9;
+        //     //             // }
+        //     //         }
+        //     //     }
+        //     // }
+        // }
+        // .episodes-btn {
+        //     bottom: -300px;
+        // }
+        // .text-under-section-title {
+        //     top: 150px;
+        // }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1200px) {
+    #episodes {
+        position: relative;
+        height: 1500px;
+    
+        // .episodes-btn {
+        //     top: 26.4%;
+        // }
+        .episodes-sparkle {
+            top: 18%;
+            left: 87%;
+        }
+        .episodes-container {
+            // position: relative;
+            // height: 62.4%;
+            // width: 92%;
+            top: 23%;
+            // left: 50%;
+            // display: grid;
+            grid-template-columns: auto auto;
+            // justify-content:space-around;
+            gap: 3%;
+            // transform: translate(-50%, 0);
+    
+            .episode-card {
+                // position: relative;
+                height: 249px;
+                width: 570;
+                // padding: 2%;
+                // display: grid;
+                // grid-template-columns: auto;
+                // grid-template-rows: 84% 16%;
+                // background-color: $pure-white;
+                // border: 1px solid black;
+                // border-radius: 9px;
+                
+                .card-cover {
+                    // display: grid;
+                    // grid-template-columns: 30% 60%;
+    
+                    .card-cover-image {
+                        img {
+                            width: 119%;
+                            // border-radius: 10px;
+                        }
+                    }
+                    .card-cover-items {
+                        // display: grid;
+                        // grid-template-columns: auto;
+                        grid-template-rows: 47.5% 1% 47.5%;
+    
+                        .card-cover-title {
+                            // height: 70%;
+                            // width: 110%;
+                            margin: 5% 0 10% 13%;
+                            // text-align: left;
+                            h3 {
+                                font-size: 22px;
+                                // span {
+                                //     display: block;
+                                // }
+                            }
+                            p {
+                                font-size: 16px;
+                                margin-bottom: 2%;
+                                // font-weight: 700;
+                                // color: $title-red;
+                            }
+                        }
+                        .card-cover-text {
+                            width: 95%;
+                            margin-left: 13%;
+                            // padding-top: 8%;
+                            font-size: 14px;
+                            // text-align: left;
+                            // color: $dark-gray;
+                        }
+                        .card-cover-line {
+                            // @include line-shared-style;
+                            width: 100%;                
+                            margin-left: 13%; 
+                            margin-top: 5%;
+                        }
+                    }
+                }
+                .card-info {
+                    // display: grid;
+                    // grid-template-columns: 65% 35%;
+    
+                    .host-authors {
+                        position: relative;
+                        top: -7px;
+                        // margin-top: 7px;
+                        // margin-bottom: 12px;
+                        font-size: 12px;
+                        // background-color: aqua;
+
+                        img { 
+                            scale: 1;
+                            margin-left: 5%;
+                        }
+                    }
+                    .tags {
+                        // background-color:blue;
+                        // position: relative;
+                        left: .5%;
+                        // margin-bottom: 17px;
+                        // display: flex;
+                        // flex-direction: row;
+                        top: -1px;
+
+                        img {
+                            margin-right: 4%;
+                            // transition: transform .5s;
+                            scale: 1;
+                        }
+                        // img:hover {
+                        //     transform: scale(1.05);
+                        // }
+                    }
+                }
+            }
+        }
+        .episodes-btn {
+            bottom: -420px;
+        }
+        .text-under-section-title {
+            top: 240px;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1300px) {
+    #episodes {
+        .episodes-sparkle {
+            // top: 18%;
+            left: 86%;
+        }
+        // .episodes-btn {
+        //     bottom: -175px;
+        // }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1350px) {
+    #episodes {
+        .episodes-sparkle {
+            // top: 18%;
+            left: 85%;
+        }
+        // .episodes-btn {
+        //     bottom: -175px;
+        // }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1400px) {
+    #episodes {
+        .episodes-sparkle {
+            top: 17%;
+            left: 84%;
+        }
+        .episodes-container {
+            // position: relative;
+            width: 87%;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1500px) {
+    #episodes {
+        .episodes-sparkle {
+            // top: 1%;
+            left: 81%;
+        }
+        .episodes-container {
+            top: 23%;
+            width: 80%;
+        }
+        .episodes-btn {
+            bottom: -410px;
+        }
+    }    
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1600px) {
+    #episodes {
+        .episodes-sparkle {
+            // top: 1%;
+            left: 79%;
+        }
+        // .episodes-container {
+        //     top: 23%;
+        //     width: 80%;
+        // }
+        // .episodes-btn {
+        //     bottom: -410px;
+        // }
     }    
 }

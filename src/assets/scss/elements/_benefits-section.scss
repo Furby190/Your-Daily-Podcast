@@ -9,20 +9,18 @@
         .benefits-uniquely-scribble {
             position: absolute; 
             width: 22%;
-            top: .6%;
+            top: 1%;
             right: 23%;
         }
         .benefits-container {
             position: absolute;
-            height: 35%;
-            width: 100%;   
-            padding: 2%;
+            width: 90%;   
             top: 180px;
             left: 50%;
             display: grid;
             grid-template-columns: repeat(2, 6fr);
             transform: translate(-50%, 0);
-            gap: 1em;
+            gap: 1.2em;
            
             .benefit-card {
                 display: grid;
@@ -55,56 +53,361 @@
         }
     }
 }
+// --------------------------------------------------------------------------------------
 
+@media (min-width: 424px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: 0%;
+            right: 14%;
+        }
+        .benefits-container {
+            top: 170px;
+        }
+        .benefits-btn {
+            height: 4em;
+            top: 85%;
+        }
+        .text-under-section-title {
+            top: 95px;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
 
+@media (min-width: 460px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: 0%;
+            right: 17%;
+        }
+        .benefits-btn {
+            top: 86%;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
 
+@media (min-width: 480px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -1%;
+            right: 18%;
+        }
+        .benefits-container {
+            top: 160px;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 500px) {
+    #benefits {
+        height: 750px;
+        
+        .benefits-uniquely-scribble {
+            top: -2%;
+            right: 19%;
+        }
+        .benefits-btn {
+            top: 83%;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 550px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -2%;
+            right: 19%;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 576px) {
+    #benefits {
+        height: 800px;
+        
+        .benefits-uniquely-scribble {
+            right: 22%;
+        }
+        .benefits-container {
+            top: 220px;
+            gap: 2em;
+            .benefit-card {
+                .benefit-title {
+                    padding-top: 7%;
+                    font-size: 13px;
+                }
+            }
+        }
+        .benefits-btn {
+            top: 85%;
+        }
+        .text-under-section-title {
+            top: 150px;
+        }
+    }
+}// --------------------------------------------------------------------------------------
+
+@media (min-width: 600px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -2.4%;
+            right: 24%;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 636px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -3%;
+            right: 15%;
+        }
+        .benefits-container {
+            top: 190px;
+        }
+        .benefits-btn {
+            top: 84%;
+        }
+        .text-under-section-title {
+            top: 110px;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 690px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -4%;
+            right: 17%;
+        }
+        .benefits-container {
+            top: 190px;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 730px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -5%;
+            right: 18%;
+        }
+        .benefits-btn {
+            height: 4.5em;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 786px) {
+    #benefits {
+        height: 880px;
+        
+        .benefits-uniquely-scribble {
+            width: 18%;
+            top: -3.1%;
+            right: 21.5%;
+        }
+        .benefits-container {
+            height: 55%;
+            width: 90%;
+            gap: 1.2em;
+            .benefit-card {
+                .benefit-text {
+                    display: block;
+                    margin-top: 7%;
+                    font-size: 10px;
+                } 
+            }
+        }
+        .benefits-btn {
+            height: 4.9em;
+            top: 87.2%;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 840px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -3.5%;
+            right: 23%;
+        }
+        .benefits-btn {
+            top: 88.5%;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 880px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            width: 16%;
+            top: -3.1%;
+            right: 24.5%;
+        }
+        .benefits-container {
+            top: 170px;
+        }
+        .benefits-btn {
+            height: 5.1em;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 940px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -3.3%;
+            right: 26%;
+        }
+        .benefits-btn {
+            height: 5.4em;
+            top: 88.5%;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 992px) {
+    #benefits {
+        height: 1100px;
+        
+        .benefits-uniquely-scribble {
+            top: -2%;
+            right: 20%;
+        }
+        .benefits-container {
+            top: 220px;
+            gap: 2em;
+
+            .benefit-card {
+                .benefit-title {
+                    padding-top: 5%;
+                    font-size: 18px;
+                }
+                .benefit-text {
+                    font-size: 13px;
+                } 
+            }
+        }
+        .benefits-btn {
+            height: 3.5em;
+            top: 85%;
+        }
+        .text-under-section-title {
+            top: 150px;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1100px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -3%;
+            right: 23%;
+        }
+        .benefits-btn {
+            top: 86%;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
 
 @media (min-width: 1200px) {
     #benefits {
         height: 1340px;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        background-color: $pure-white;
-        
         .benefits-uniquely-scribble {
-            position: absolute; 
-            top: -2.5%;
+            width: 18%;
+            top: 0%;
             right: 18%;
         }
         .benefits-container {
-            position: absolute;
-            height: 55%;
-            width: 100%;   
-            padding: 2%;
-            top: 24%;
-            left: 50%;
+            width: 95%;   
+            top: 310px;
             display: grid;
             grid-template-columns: repeat(3, 4fr);
-            transform: translate(-50%, 0);
             gap: 1em;
            
             .benefit-card {
-                display: grid;
-                grid-template-rows: 50% 15% 35%;
-                text-align: center;
-                transition: box-shadow .5s, transform .5s;
-                border-bottom-right-radius: 8px;
-                
-                .benefit-card-photo {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                .benefit-title {
+                    padding-top: 1%;
+                    font-size: 22px;                 
+                }
+                .benefit-text {
+                    margin-top: -3%;
+                    font-size: 16px;
                 }   
-            }
-            .benefit-card:hover {
-                box-shadow: 5px 5px $shadow-blue;
-                transform: scale(1.01);
             }
         }
         .benefits-btn {
             height: 4.5em;
-            top: 87.5%;
+            top: 84%;
+        }
+        .text-under-section-title {
+            top: 230px;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1300px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -1%;
+            right: 20%;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1400px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -2%;
+            right: 21%;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1500px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -2.3%;
+            right: 23%;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1600px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -2.7%;
+            right: 24.6%;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1700px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -3.5%;
+            right: 25%;
         }
     }
 }
