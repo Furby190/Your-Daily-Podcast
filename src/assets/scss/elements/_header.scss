@@ -17,12 +17,12 @@
             
             .nav-logo {
                 position: absolute;
-                top: 50%; 
+                top: 60%; 
                 left: 1%;
                 transform: translate(0, -50%);
                 img {
-                    height: 40px;
-                    width: 40px;
+                    height: 45px;
+                    width: 45px;
                 }
             }
             .nav-menu {
@@ -58,8 +58,8 @@
                         justify-content: center;
                         align-items: center;
                         flex-direction: row;
-                        font-family: 'Montserrat Alternates', sans-serif;
-                        font-size: 11px;
+                        font-size: 10px;
+                        font-family: mainBoldFont, sans-serif;
                         color: $pure-black;
                         background-color: transparent;
                         border: none;
@@ -83,11 +83,12 @@
                         top: 82%;
                         left: 0;
                         border-bottom-right-radius: 6px;
-                        button {
+
+                        .dropdown-content-btn {
                             width: 100%;
                             margin-bottom: 4%;
-                            font-size: 11px;
-                            font-family: 'Montserrat Alternates', sans-serif;
+                            font-size: 10px;
+                            font-family: mainBoldFont, sans-serif;
                             color: $pure-black;
                             background-color: transparent;
                             border: none;
@@ -100,7 +101,7 @@
                                 color: $pure-black;
                             }   
                         }
-                        button:hover {
+                        .dropdown-content-btn:hover {
                             box-shadow: 3px 0  0.1px -1px $darker-main-color;
                         } 
                     } 
@@ -120,8 +121,8 @@
             }
         }
         h1 {
-            margin-top: 3%;
-            font-family: 'Montserrat Alternates', sans-serif;
+            margin-top: 13%;
+            font-family: mainBoldFont, sans-serif;
             font-size: 40px;
             font-weight: 700;
 
@@ -140,21 +141,21 @@
             }
         }
         .header-sub-btn {
-            margin-top: 5%;
+            margin-top: 10%;
         }
         .hero-shape-swirl {
             position: absolute;
-            top: 13%;
+            top: 15%;
             right: 90%;
 
             img {
-                height: 250%;
-                width: 250%;
+                height: 210%;
+                width: 210%;
             }
         }
         .hero-shape-stars {
             position: absolute;
-            top: 18%;
+            top: 24%;
             right: -10%; 
 
             img {
@@ -164,7 +165,7 @@
         }
         .supported-platforms {
             width: 90%;
-            margin: 3% auto 0;
+            margin: 0% auto 0;
             padding: 3% 2% 3% 5%;
             display: flex;
             flex-direction: column;
@@ -180,8 +181,8 @@
                 p {
                     display: flex;
                     align-items: center; 
-                    font-size: 10px;
-                    font-weight: bold;
+                    font-size: 9px;
+                    font-family: mainBoldFont, sans-serif;
                 }
             }
             .platform {
@@ -198,20 +199,25 @@
 }
 // --------------------------------------------------------------------------------------
 
-@media (min-width: 430px) {
+@media (min-width: 420px) {
     header {
         height: 700px;
 
         .hero-shape-stars {
-            top: 18%;
             right: -8%; 
         }
-
         nav {
             .nav-menu {
                 left: 85%;
             }      
         }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 460px) {
+    header {
+        height: 740px;
     }
 }
 // --------------------------------------------------------------------------------------
@@ -226,10 +232,13 @@
         .supported-platforms {
             .platforms {
                 p {
-                    font-size: 12px;
+                    font-size: 10.5px;
                 }
             }
-        }    
+        }  
+        .hero-shape-stars {
+            right: -7%;
+        }  
     }
 }
 // --------------------------------------------------------------------------------------
@@ -243,42 +252,54 @@
 
 @media (min-width: 576px) {
     header {
-        height: 880px;
+        height: 930px;
 
         nav {
             .nav-logo {
                 img {
-                    height: 50px;
-                    width: 50px;
+                    height: 55px;
+                    width: 55px;
                 }
             }
             .nav-menu {
-                left: 88%;
+                left: 89%;
+
                 .more-menu-btn {
                     .more-btn {
-                        font-size: 12px;
+                        font-size: 10px;
                     }
                     .dropdown-content {
-                        button {
-                        font-size: 12px;
+                        .dropdown-content-btn {
+                        font-size: 10px;
                        }
                     }
                 }
             }           
         }
         h1 {
+            margin-top: 7%;
             font-size: 62px;
         }  
         .header-short-description {
             margin-top: 3%;
             font-size: 12px;
         }
+        .hero-shape-swirl {
+            top: 19%;
+        }
         .hero-shape-stars {
-            position: absolute;
-            top: 21%;
-            right: -6%; 
+            top: 33%;
+            right: 0px; 
+            img {
+                width: 65%;
+            }
         }
         .supported-platforms {
+            .platforms {
+                p {
+                    font-size: 12px;
+                }
+            }
             .platform {
                 .logo {
                     width: 66%;
@@ -291,29 +312,16 @@
 
 @media (min-width: 646px) {
     header {
-        height: 930px;
-
-        .supported-platforms {
-            .platform {
-                .logo {
-                    height: 90%;
-                    width: 70%;
-                } 
-            }
-        }
+        height: 970px;
     }
 }
 // --------------------------------------------------------------------------------------
 
 @media (min-width: 730px) {
     header {
-        height: 980px;
+        height: 1030px;
 
         .hero-shape-stars {
-            position: absolute;
-            top: 21%;
-            right: -2%; 
-
             img {
                 height: 73%;
                 width: 73%;
@@ -325,27 +333,13 @@
 
 @media (min-width: 786px) {
     header {
-        height: 1040px;
+        height: 1030px;
 
         nav {
             .nav-logo {
                 img {
                     height: 60px;
                     width: 60px;
-                }
-            }
-            .nav-menu {
-                left: 92%;
-                .more-menu-btn {
-                    .more-btn {
-                        font-size: 13px;
-                    }
-                    .dropdown-content {
-                        button {
-                        font-size: 13px;
-                       }
-                    }
-
                 }
             }           
         }
@@ -374,18 +368,33 @@
 }
 // --------------------------------------------------------------------------------------
 
-@media (min-width: 866px) {
+@media (min-width: 830px) {
     header {
-        height: 1100px; 
+        height: 1060px; 
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 890px) {
+    header {
+        height: 1090px; 
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 940px) {
+    header {
+        height: 1120px; 
     }
 }
 // --------------------------------------------------------------------------------------
 
 @media (min-width: 992px) {
     header {
-        height: 1200px;
+        height: 1210px;
         nav {
             .nav-logo {
+                top: 50%; 
                 img {
                     height: 80px;
                     width: 80px;
@@ -411,7 +420,7 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-family: mainBoldFont, sans-serif;
                     color: $pure-black;
                     background-color: transparent;
                     text-decoration: none;
@@ -423,6 +432,7 @@
                     a {
                         position: relative;
                         padding: 3% 11%;
+                        font-size: 13px;
                         color: $pure-black;
                         text-decoration: none;
                     }  
@@ -430,11 +440,17 @@
                 .more-menu-btn {
                     height: 33px;
                     width: 82px;
-
+                    
                     .more-btn {
+                        font-size: 13px;
                         .nav-arrow-image {
                             margin-left: 10%;
                         }
+                    }
+                    .dropdown-content {
+                        .dropdown-content-btn {
+                            font-size: 13px;
+                       }
                     }
                 }
             }
@@ -451,7 +467,7 @@
                 
                 .nav-main-btn {
                     padding: 2% 5%;
-                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-family: mainRegularFont, sans-serif;
                     font-size: 80%;
                     font-weight: 400;
                     border: 2px solid $pure-black;
@@ -487,8 +503,8 @@
             font-size: 87px;
         }  
         .hero-shape-stars {
-            top: 24%;
-            right: -1%; 
+            top: 33%;
+
             img {
                 height: 95%;
                 width: 95%;
@@ -505,9 +521,23 @@
 }
 // --------------------------------------------------------------------------------------
 
-@media (min-width: 1070px) {
+@media (min-width: 1030px) {
+    header {
+        height: 1240px; 
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1090px) {
     header {
         height: 1270px; 
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1150px) {
+    header {
+        height: 1310px; 
     }
 }
 // --------------------------------------------------------------------------------------
@@ -561,13 +591,7 @@
 @media (min-width: 1400px) {
     header {
         height: 1690px;
-        nav {
-            .nav-main-btns {
-                .nav-main-btn:nth-child(2) {
-                    padding: 2% 5%;
-                }
-            }
-        }
+
         .hero-shape-stars {
             top: 32%;
         }
@@ -575,6 +599,19 @@
             .platforms {
                 p {
                     font-size: 22px;
+                }
+            }
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1453px) {
+    header {
+        nav {
+            .nav-main-btns {
+                .nav-main-btn:nth-child(2) {
+                    padding: 2% 5%;
                 }
             }
         }
@@ -598,6 +635,6 @@
 
 @media (min-width: 1700px) {
     header {
-        height: 1830px;
+        height: 1850px;
     }
 }

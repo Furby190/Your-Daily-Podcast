@@ -9,8 +9,8 @@
         .benefits-uniquely-scribble {
             position: absolute; 
             width: 22%;
-            top: 1%;
-            right: 23%;
+            top: .5%;
+            right: 20%;
         }
         .benefits-container {
             position: absolute;
@@ -37,6 +37,7 @@
                 .benefit-title {
                     padding-top: 13%;
                     font-size: 11px;
+                    font-family: mainBoldFont, sans-serif;
                 }
                 .benefit-text {
                     display: none;
@@ -49,27 +50,18 @@
         }
         .benefits-btn {
             height: 2.8em;
+            height: 30px;
             top: 87.5%;
         }
     }
 }
 // --------------------------------------------------------------------------------------
 
-@media (min-width: 424px) {
+@media (min-width: 420px) {
     #benefits {
         .benefits-uniquely-scribble {
+            right: 22%;
             top: 0%;
-            right: 14%;
-        }
-        .benefits-container {
-            top: 170px;
-        }
-        .benefits-btn {
-            height: 4em;
-            top: 85%;
-        }
-        .text-under-section-title {
-            top: 95px;
         }
     }
 }
@@ -78,24 +70,27 @@
 @media (min-width: 460px) {
     #benefits {
         .benefits-uniquely-scribble {
-            top: 0%;
-            right: 17%;
+            top: -1%;
+            right: 22%;
         }
-        .benefits-btn {
-            top: 86%;
-        }
+       
     }
 }
 // --------------------------------------------------------------------------------------
 
-@media (min-width: 480px) {
+@media (min-width: 489px) {
     #benefits {
         .benefits-uniquely-scribble {
-            top: -1%;
-            right: 18%;
+            right: 15%;
         }
         .benefits-container {
             top: 160px;
+        }
+        .text-under-section-title {
+            top: 95px;
+        }
+        .benefits-btn {
+            top: 86%;
         }
     }
 }
@@ -105,10 +100,6 @@
     #benefits {
         height: 750px;
         
-        .benefits-uniquely-scribble {
-            top: -2%;
-            right: 19%;
-        }
         .benefits-btn {
             top: 83%;
         }
@@ -116,11 +107,11 @@
 }
 // --------------------------------------------------------------------------------------
 
-@media (min-width: 550px) {
+@media (min-width: 530px) {
     #benefits {
         .benefits-uniquely-scribble {
             top: -2%;
-            right: 19%;
+            right: 16%;
         }
     }
 }
@@ -144,6 +135,7 @@
             }
         }
         .benefits-btn {
+            height: 40px;
             top: 85%;
         }
         .text-under-section-title {
@@ -155,27 +147,8 @@
 @media (min-width: 600px) {
     #benefits {
         .benefits-uniquely-scribble {
-            top: -2.4%;
-            right: 24%;
-        }
-    }
-}
-// --------------------------------------------------------------------------------------
-
-@media (min-width: 636px) {
-    #benefits {
-        .benefits-uniquely-scribble {
             top: -3%;
-            right: 15%;
-        }
-        .benefits-container {
-            top: 190px;
-        }
-        .benefits-btn {
-            top: 84%;
-        }
-        .text-under-section-title {
-            top: 110px;
+            right: 21%;
         }
     }
 }
@@ -185,23 +158,29 @@
     #benefits {
         .benefits-uniquely-scribble {
             top: -4%;
-            right: 17%;
         }
-        .benefits-container {
-            top: 190px;
+        .benefits-btn {
+            top: 86%;
         }
     }
 }
 // --------------------------------------------------------------------------------------
 
-@media (min-width: 730px) {
+@media (min-width: 734px) {
     #benefits {
         .benefits-uniquely-scribble {
             top: -5%;
-            right: 18%;
+            right: 15%;
+        }
+        .benefits-container {
+            top: 190px;
         }
         .benefits-btn {
             height: 4.5em;
+            top: 85%;
+        }
+        .text-under-section-title {
+            top: 110px;
         }
     }
 }
@@ -209,12 +188,12 @@
 
 @media (min-width: 786px) {
     #benefits {
-        height: 880px;
+        height: 900px;
         
         .benefits-uniquely-scribble {
             width: 18%;
             top: -3.1%;
-            right: 21.5%;
+            right: 19.5%;
         }
         .benefits-container {
             height: 55%;
@@ -229,8 +208,8 @@
             }
         }
         .benefits-btn {
-            height: 4.9em;
-            top: 87.2%;
+            height: 50px;
+            top: 88%;
         }
     }
 }
@@ -240,10 +219,7 @@
     #benefits {
         .benefits-uniquely-scribble {
             top: -3.5%;
-            right: 23%;
-        }
-        .benefits-btn {
-            top: 88.5%;
+            right: 21%;
         }
     }
 }
@@ -254,12 +230,12 @@
         .benefits-uniquely-scribble {
             width: 16%;
             top: -3.1%;
-            right: 24.5%;
         }
         .benefits-container {
             top: 170px;
         }
         .benefits-btn {
+            top: 87%;
             height: 5.1em;
         }
     }
@@ -270,7 +246,7 @@
     #benefits {
         .benefits-uniquely-scribble {
             top: -3.3%;
-            right: 26%;
+            right: 24%;
         }
         .benefits-btn {
             height: 5.4em;
@@ -282,14 +258,14 @@
 
 @media (min-width: 992px) {
     #benefits {
-        height: 1100px;
+        height: 1160px;
         
         .benefits-uniquely-scribble {
             top: -2%;
-            right: 20%;
+            right: 26%;
         }
         .benefits-container {
-            top: 220px;
+            top: 270px;
             gap: 2em;
 
             .benefit-card {
@@ -303,8 +279,39 @@
             }
         }
         .benefits-btn {
-            height: 3.5em;
-            top: 85%;
+            height: 80px;
+            top: 87%;
+        }
+        .text-under-section-title {
+            top: 200px;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1022px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -2%;
+            right: 18%;
+        }
+        .benefits-container {
+            top: 230px;
+            gap: 2em;
+
+            .benefit-card {
+                .benefit-title {
+                    padding-top: 5%;
+                    font-size: 18px;
+                }
+                .benefit-text {
+                    font-size: 13px;
+                } 
+            }
+        }
+        .benefits-btn {
+            height: 80px;
+            top: 87%;
         }
         .text-under-section-title {
             top: 150px;
@@ -317,7 +324,7 @@
     #benefits {
         .benefits-uniquely-scribble {
             top: -3%;
-            right: 23%;
+            right: 20%;
         }
         .benefits-btn {
             top: 86%;
@@ -328,15 +335,15 @@
 
 @media (min-width: 1200px) {
     #benefits {
-        height: 1340px;
+        height: 1440px;
         .benefits-uniquely-scribble {
             width: 18%;
             top: 0%;
-            right: 18%;
+            right: 23%;
         }
         .benefits-container {
             width: 95%;   
-            top: 310px;
+            top: 400px;
             display: grid;
             grid-template-columns: repeat(3, 4fr);
             gap: 1em;
@@ -353,21 +360,37 @@
             }
         }
         .benefits-btn {
-            height: 4.5em;
-            top: 84%;
+            height: 80px;
+            top: 88%;
         }
         .text-under-section-title {
-            top: 230px;
+            top: 300px;
         }
     }
 }
 // --------------------------------------------------------------------------------------
 
-@media (min-width: 1300px) {
+@media (min-width: 1250px) {
     #benefits {
         .benefits-uniquely-scribble {
             top: -1%;
-            right: 20%;
+            right: 24%;
+        }
+    }
+}
+// --------------------------------------------------------------------------------------
+
+@media (min-width: 1311px) {
+    #benefits {
+        .benefits-uniquely-scribble {
+            top: -1%;
+            right: 16%;
+        }
+        .benefits-container { 
+            top: 350px;
+        }
+        .text-under-section-title {
+            top: 240px;
         }
     }
 }
@@ -377,7 +400,7 @@
     #benefits {
         .benefits-uniquely-scribble {
             top: -2%;
-            right: 21%;
+            right: 17%;
         }
     }
 }
@@ -387,7 +410,7 @@
     #benefits {
         .benefits-uniquely-scribble {
             top: -2.3%;
-            right: 23%;
+            right: 20%;
         }
     }
 }
@@ -397,7 +420,7 @@
     #benefits {
         .benefits-uniquely-scribble {
             top: -2.7%;
-            right: 24.6%;
+            right: 21%;
         }
     }
 }
@@ -407,7 +430,7 @@
     #benefits {
         .benefits-uniquely-scribble {
             top: -3.5%;
-            right: 25%;
+            right: 22%;
         }
     }
 }

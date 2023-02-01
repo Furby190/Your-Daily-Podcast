@@ -5,8 +5,9 @@
         text-align: center;
     }
     .darker-btn {
-        padding: 2% 5%;
-        font-family: 'Montserrat Alternates', sans-serif;
+        height: 30px;
+        padding: 1% 5%;
+        font-family: mainRegularFont, sans-serif;
         font-size: 8px;
         background-color: $pure-black;
         color: $pure-white;
@@ -26,7 +27,7 @@
         }
     }
     .splide {
-        margin-top: 10%;
+        margin-top: 1%;
         padding: 13%;
     }
     .splide__slide {
@@ -41,6 +42,7 @@
                 position: relative;
                 top: -25px;
                 font-size: 14px;
+                font-family: mainRegularFont, sans-serif;
                 color: $shadow-blue;
             }
             .vectors-first, .vectors-second, .vectors-third, .vectors-fourth, .vectors-fifth {
@@ -73,7 +75,7 @@
         position: absolute;
         top: 60px;
         left: 50%;
-        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: mainBoldFont, sans-serif;
         font-size: 22px;
         color: $pure-black;
         transform: translate(-50%);
@@ -84,7 +86,7 @@
         display: block;
         top: 120px;
         left: 50%;
-        font-family: 'Montserrat Alternates', sans-serif;
+        font-family: mainRegularFont, sans-serif;
         font-size: 10px;
         color: $dark-gray;
         transform: translate(-50%);
@@ -112,6 +114,10 @@
 // --------------------------------------------------------------------------------------
 
 @media (min-width: 576px) {
+    .darker-btn {
+        height: 40px;
+        font-size: 10px;
+    }
     .splide {
         margin-top: 6%;
         padding: 11%;
@@ -125,6 +131,7 @@
             .card-title {
                 top: -30px;
                 font-size: 16px;
+                font-family: mainRegularFont, sans-serif;
             }
             .card-platforms {
                 right: -6%;
@@ -148,11 +155,11 @@
         top: -46px;
     }
     .splide {
-        margin-top: 10%;
+        margin-top: 5%;
         padding: 8%;
     }
     .darker-btn {
-        // padding: 2% 5%;
+        height: 50px;
         font-size: 10px;
     }
 }
@@ -160,6 +167,7 @@
 
 @media (min-width: 992px) {
     .darker-btn {
+        height: 80px;
         font-size: 1em;
         border-radius: 8px;
     }
@@ -288,7 +296,6 @@
         position: absolute;
         top: 140px;
         left: 50%;
-        font-family: 'Montserrat Alternates', sans-serif;
         font-size: 59px;
         color: $pure-black;
         transform: translate(-50%);
@@ -298,26 +305,4 @@
         top: 240px;
         font-size: 22px;
     }
-    // .scribble {
-    //     height: 160px;
-    //     top: -82px;
-    // }
-    // .section-title {
-    //     position: absolute;
-    //     top: 140px;
-    //     left: 50%;
-    //     font-family: 'Montserrat Alternates', sans-serif;
-    //     font-size: 59px;
-    //     color: $pure-black;
-    //     transform: translate(-50%);
-    //     letter-spacing: -0.02em;
-    // }
-    
-    // .episode-card-shadow {
-    //     box-shadow: 10px 10px $shadow-blue;
-    // }
-    
-    // .red-title {
-    //     color: $title-red;
-    // }
 }

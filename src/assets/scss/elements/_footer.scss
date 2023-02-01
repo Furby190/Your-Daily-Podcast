@@ -71,7 +71,7 @@
                 p {
                     margin-bottom: 5%;
                     font-size: 14px;
-                    font-family: 'Montserrat Alternates';
+                    font-family: mainRegularFont, sans-serif;
                     font-weight: 500;
                     color: $dark-gray;
                 }
@@ -123,6 +123,7 @@
                 margin-top: 3.5%;
                 .footnote-year {
                     font-size: 13px;
+                    font-family: mainRegularFont, sans-serif;
                 }
                 p {
                     display: none;
@@ -552,7 +553,6 @@
                         margin-bottom: 10%;
                     }
                     div {
-                    
                         img {
                             width: 18%; 
                         }
@@ -579,13 +579,13 @@
 
                 .footnote-year {
                     position: relative;
-                    left: -80%;
+                    left: -77%;
                     font-size: 16px;
                 }
                 p:nth-of-type(1) {
                     position: relative;
                     display: block;
-                    left: -76%;
+                    left: -68%;
 
                     span {
                         color: $title-red;
@@ -609,7 +609,7 @@
         .footnote {
             .footnote-text {
                 p:nth-of-type(1) {
-                    left: -79%;
+                    left: -70%;
                 }
             }        
         }
@@ -622,7 +622,7 @@
         .footnote {
             .footnote-text {
                 p:nth-of-type(1) {
-                    left: -82%;
+                    left: -72%;
                 }
             }        
         }
@@ -634,8 +634,11 @@
     footer {    
         .footnote {
             .footnote-text {
+                .footnote-year {
+                    left: -79%;
+                }
                 p:nth-of-type(1) {
-                    left: -84%;
+                    left: -76%;
                 }
             }        
         }
@@ -648,7 +651,7 @@
         .footnote {
             .footnote-text {
                 p:nth-of-type(1) {
-                    left: -86%;
+                    left: -78%;
                 }
             }        
         }
@@ -661,10 +664,10 @@
         .footnote {
             .footnote-text {
                 .footnote-year {
-                    left: -84%;
+                    left: -82%;
                 }
                 p:nth-of-type(1) {
-                    left: -90%;
+                    left: -83%;
                 }
             }        
         }
@@ -677,7 +680,7 @@
         .footnote {
             .footnote-text {
                 p:nth-of-type(1) {
-                    left: -95%;
+                    left: -86%;
                 }
             }        
         }
@@ -690,7 +693,7 @@
         .footnote {
             .footnote-text {
                 p:nth-of-type(1) {
-                    left: -97%;
+                    left: -88%;
                 }
             }        
         }
@@ -703,7 +706,7 @@
         .footnote {
             .footnote-text {
                 p:nth-of-type(1) {
-                    left: -99%;
+                    left: -90%;
                 }
             }        
         }
@@ -729,23 +732,10 @@
         .footnote {
             .footnote-text {
                 .footnote-year {
-                    left: -87%;
+                    left: -84%;
                 }
                 p:nth-of-type(1) {
-                    left: -101%;
-                }
-            }        
-        }
-    }
-}
-// --------------------------------------------------------------------------------------
-
-@media (min-width: 1440px) {
-    footer {    
-        .footnote {
-            .footnote-text {
-                p:nth-of-type(1) {
-                    left: -104%;
+                    left: -94%;
                 }
             }        
         }
@@ -758,7 +748,7 @@
         .footnote {
             .footnote-text {
                 p:nth-of-type(1) {
-                    left: -104%;
+                    left: -95%;
                 }
             }        
         }
@@ -770,8 +760,11 @@
     footer {    
         .footnote {
             .footnote-text {
+                .footnote-year {
+                    left: -86%;
+                }
                 p:nth-of-type(1) {
-                    left: -106%;
+                    left: -99%;
                 }
             }        
         }
@@ -783,11 +776,8 @@
     footer {    
         .footnote {
             .footnote-text {
-                .footnote-year {
-                    left: -88%;
-                }
                 p:nth-of-type(1) {
-                    left: -108%;
+                    left: -101%;
                 }
             }        
         }
@@ -799,8 +789,11 @@
     footer {    
         .footnote {
             .footnote-text {
+                  .footnote-year {
+                    left: -87%;
+                }
                 p:nth-of-type(1) {
-                    left: -109%;
+                    left: -103%;
                 }
             }        
         }
@@ -813,7 +806,7 @@
         .footnote {
             .footnote-text {
                 p:nth-of-type(1) {
-                    left: -111%;
+                    left: -104%;
                 }
             }        
         }
@@ -826,10 +819,10 @@
         .footnote {
             .footnote-text {
                 .footnote-year {
-                    left: -89%;
+                    left: -88%;
                 }
                 p:nth-of-type(1) {
-                    left: -113%;
+                    left: -106%;
                 }
             }        
         }
@@ -842,7 +835,7 @@
         .footnote {
             .footnote-text {
                 p:nth-of-type(1) {
-                    left: -115%;
+                    left: -108%;
                 }
             }        
         }
@@ -855,7 +848,7 @@
         .footnote {
             .footnote-text {
                 p:nth-of-type(1) {
-                    left: -117%;
+                    left: -110%;
                 }
             }        
         }

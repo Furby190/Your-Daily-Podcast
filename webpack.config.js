@@ -7,7 +7,7 @@ const env = process.env.NODE_ENV;
 
 module.exports = {
     entry: {
-        home: './src/assets/js/home.js',
+        home: './src/assets/js/home.js'
     },
     mode: env,
 
@@ -44,7 +44,8 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: 'babel-loader'
-            }, {
+            },
+            {
                 test: /\.(sa|sc|c)ss$/,
                 use: [
                     env == 'development'

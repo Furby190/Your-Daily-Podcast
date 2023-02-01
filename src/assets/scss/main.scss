@@ -2,6 +2,7 @@
 @import './colors';
 @import './components';
 @import './@mixins';
+@import './fonts';
 
 
 @import '../scss/elements/header';
@@ -22,6 +23,6 @@
 }
 
 body {
-    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: mainRegularFont, sans-serif;
 }
 

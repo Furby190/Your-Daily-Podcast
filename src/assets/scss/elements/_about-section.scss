@@ -28,6 +28,7 @@
                 p {
                     margin-top: 6%;
                     font-size: 8px;
+                    font-family: mainRegularFont, sans-serif;
                 }
             }
         }
@@ -42,9 +43,9 @@
     
             p {
                 margin-top: 14%;
-                font-family: 'Montserrat Alternates', sans-serif;
+                font-family: mainBoldFont, sans-serif;
                 font-size: 13px;
-                font-weight: 700;
+
                 span { 
                     display: block;
                 }
@@ -92,7 +93,7 @@
                     .author-first-name {
                         margin-top: 7%;
                         font-size: 8px;
-                        font-weight: 400;  
+                        font-family: mainRegularFont, sans-serif; 
                     } 
                 }
                 .author-platform {
